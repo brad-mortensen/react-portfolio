@@ -6,10 +6,11 @@ const StyledHeaderContent = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-flow: column;
+  align-items: center;
   margin: 70px 0;
   padding: 0 2%;
+  box-sizing: border-box;
   .intro {
     width: 100%;
     height: auto;
@@ -21,9 +22,9 @@ const StyledHeaderContent = styled.div`
   .down-arrow {
     width: 15%;
     height: auto;
-    margin: 50px 0;
+    margin: 100px 0 10px 0;
     visibility: visible;
-    animation: flasher 3s linear infinite;
+    animation: flasher 2s linear infinite;
   }
   @keyframes flasher {
     50% {

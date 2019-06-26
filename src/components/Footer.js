@@ -7,7 +7,7 @@ import Socials from './Socials';
 const StyledFooter = styled.div`
 	display:flex;
 	flex-flow: row;
-	height: 50vh;
+	height: auto;
 `;
 
 const Footer = () => {

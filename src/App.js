@@ -7,7 +7,8 @@ import Skills from './components/Skills';
 
 const Container = styled.div`
 	box-sizing: border-box;
-	border: 1px solid black;
+	/* width: 1200px;
+	margin: 0 auto; */
 `;
 
 function App() {

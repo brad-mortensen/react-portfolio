@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const StyledSkills = styled.div`
   width: 100%;
   border-bottom: 1px solid purple;
-  height: 70vh;
+  height: auto;
   h1 {
     text-align: center;
   }

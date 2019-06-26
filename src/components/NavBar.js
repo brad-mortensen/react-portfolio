@@ -26,7 +26,7 @@ const StyledNav = styled.div`
       height: 20px;
       text-transform: uppercase;
       font-size: 1rem;
-    font-family: 'Carrois Gothic SC', sans-serif;
+      font-family: 'Carrois Gothic SC', sans-serif;
       &:hover{
         box-sizing: border-box;
         border-bottom: 1px solid black;
