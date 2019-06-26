@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const StyledSocials = styled.div`
+	border: 1px solid blue;
+	width: 50%;
+`;
+
 const Socials = () => {
-	const StyledSocials = styled.div`
-		border: 1px solid blue;
-		width: 50%;
-	`;
 
 	return (
 		<StyledSocials className="contact">

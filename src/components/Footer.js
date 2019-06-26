@@ -4,11 +4,13 @@ import styled from 'styled-components';
 import ContactForm from './ContactForm';
 import Socials from './Socials';
 
+const StyledFooter = styled.div`
+	display:flex;
+	flex-flow: row;
+`;
+
 const Footer = () => {
-	const StyledFooter = styled.div`
-		display:flex;
-		flex-flow: row;
-	`;
+
 	return (
 		<StyledFooter>
 			<ContactForm />
