@@ -8,6 +8,8 @@ const Contact = styled.form`
 	display: flex;
 	flex-flow: column;
 	align-items: center;
+	font-family: 'Carrois Gothic SC', sans-serif;
+
 	label{
 		width: 50%;
 		color: white;
@@ -15,6 +17,7 @@ const Contact = styled.form`
 	input {
 		width: 50%;
 		background-color: white;
+		
 	}
 	textarea {
 		width: 50%;
@@ -28,6 +31,8 @@ const Contact = styled.form`
 			width: 100px;
 			height: 40px;
 			background-color: white;
+			font-family: 'Carrois Gothic SC', sans-serif;
+			font-size: 1rem;
 		}
 	}
 `;
@@ -37,7 +42,7 @@ const ContactForm = () => {
 	const [message, setMessage] = useState('');
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
-	const [buttonText, setButtonText] = useState('Send!');
+	const [buttonText, setButtonText] = useState('Send');
 
 	const apiURL = 'https://email-api-server.herokuapp.com/api/v1'
 
@@ -58,7 +63,7 @@ const ContactForm = () => {
 				resetForm();
 			})
 			.catch((err) => {
-				console.log(`Message not sent ${err}`)
+				console.log(`Message not sent: ${err}`)
 			})
 	}
 	const resetForm = () => {

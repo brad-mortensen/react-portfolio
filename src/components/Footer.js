@@ -9,6 +9,7 @@ const StyledFooter = styled.div`
 	flex-flow: row;
 	height: auto;
 	padding-bottom: 50px;
+	background-color: black;
 `;
 
 const Footer = () => {
