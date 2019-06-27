@@ -26,13 +26,13 @@ const Socials = () => {
 	return (
 		<StyledSocials className="contact">
 			<div className="contact-container">
-				<a href="https://github.com/brad-mortensen" target="_blank">
+				<a href="https://github.com/brad-mortensen" target="_blank" rel="noopener noreferrer">
 					<img src='' alt='github' />
 				</a>
-				<a href="https://www.linkedin.com/in/bradmmortensen/" target="_blank">
+				<a href="https://www.linkedin.com/in/bradmmortensen/" target="_blank" rel="noopener noreferrer">
 					<img src='' alt='linkedin' />
 				</a>
-				<a href="https://twitter.com/bradmmortensen">
+				<a href="https://twitter.com/bradmmortensen" target="_blank" rel="noopener noreferrer">
 					<img src='' alt='twitter' />
 				</a>
 			</div>

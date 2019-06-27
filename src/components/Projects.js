@@ -32,26 +32,29 @@ const Projects = () => {
       name: "Bonafind",
       description: "a cool app",
       stack: "React, Express, Node, PostgreSQL",
-      img: bonafind
+      img: bonafind,
+      id: 1
     },
     {
       name: "Vue Notes",
       description: "a Vue app",
       stack: "Vue, Express, Node, PostgreSQL",
-      img: vueNotes
+      img: vueNotes,
+      id: 2
     },
     {
       name: "Django Blog",
       description: "Django Blog Site",
       stack: "Django, PostgreSQL",
-      img: djangoBlog
+      img: djangoBlog,
+      id: 3
     },
   ]
   return (
     <StyledProjects>
       <h1 className="projects">projects</h1>
-      {projectData.map(project => 
-        <Project project={project}/>
+      {projectData.map((project) =>
+        <Project project={project} key={project.id} />
       )}
     </StyledProjects>
   )

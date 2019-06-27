@@ -1,18 +1,22 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
+import ProjectModal from './ProjectModal';
+
 const StyledProject = styled.div`
   width: 31%;
   box-sizing: border-box;
   position: relative;
   .no-hover {
     width: 100%;
-    height: auto;    
+    height: auto;
+    transition: opacity .5s;    
   }
   .hover {
     width: 100%;
     height: auto;
-    opacity: .4;
+    opacity: .3;
+    transition: opacity .5s;
   }
   .img-header {
     position: absolute;
@@ -27,13 +31,37 @@ const StyledProject = styled.div`
   
 `;
 
-const Project = ({ project }) => {
-  const { name, description, img } = project;
-  const [hovering, setHovering] = useState(false)
+const Project = ({ project, toggleModal }) => {
+  const { name, img } = project;
+  const [hovering, setHovering] = useState(false);
+  const [viewProject, setViewProject] = useState(false)
+
   return (
-    <StyledProject>
-      {hovering ? <><img className="hover" onMouseEnter={() => setHovering(true)} onMouseLeave={() => setHovering(false)} src={img} alt={name} /> <h1 className="img-header">{name}</h1> <p className="img-text">{description}</p></> : <img className="no-hover" onMouseEnter={() => setHovering(true)} onMouseLeave={() => setHovering(false)} src={img} alt={name} />}
-    </StyledProject>
+    <>
+      <StyledProject>
+        {hovering ?
+          <>
+            <img
+              className="hover"
+              onMouseEnter={() => setHovering(true)}
+              onMouseLeave={() => setHovering(false)}
+              onClick={() => setViewProject(true)}
+              src={img} alt={name}
+            />
+            <h1 className="img-header">{name}</h1>
+          </> :
+          <img
+            className="no-hover"
+            onMouseEnter={() => setHovering(true)}
+            onMouseLeave={() => setHovering(false)}
+            onClick={() => setViewProject(true)}            
+            src={img}
+            alt={name}
+          />
+        }
+      </StyledProject>
+      {viewProject ? <ProjectModal project={project} setViewProject={setViewProject}/> : null}
+    </>
   )
 }
 
