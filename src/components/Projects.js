@@ -4,15 +4,25 @@ import bonafind from './assets/bonafind.png';
 import vueNotes from './assets/vue-notes.png';
 import djangoBlog from './assets/django-blog.png';
 
-
 import Project from './Project';
 
 const StyledProjects = styled.div`
+  box-sizing: border-box;
   width: 100%;
   border-bottom: 1px solid orange;
   height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 0 2% 40px 2%;
+  background-color: black;
   h1 {
-    text-align: center;
+    width: 100%;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-size: 2rem;
+    font-weight: lighter;
+    color: white;
   }
 `;
 
@@ -39,6 +49,7 @@ const Projects = () => {
   ]
   return (
     <StyledProjects>
+      <h1 className="projects">projects</h1>
       {projectData.map(project => 
         <Project project={project}/>
       )}

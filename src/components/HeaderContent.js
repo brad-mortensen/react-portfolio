@@ -36,7 +36,7 @@ const StyledHeaderContent = styled.div`
 const HeaderContent = () => {
   return (
     <StyledHeaderContent>
-      <p className="intro">Hi, I'm Brad Mortensen<br></br>software developer.</p>
+      <p className="intro">Hi, I'm Brad Mortensen.<br></br>software developer.</p>
       <img className="down-arrow" src={downArrow}  alt="down-arrow" />
     </StyledHeaderContent>
   )
