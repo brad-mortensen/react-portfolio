@@ -4,35 +4,38 @@ import axios from 'axios';
 
 const Contact = styled.form`
 	width: 50%;
-	border: 1px solid green;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
 	font-family: 'Carrois Gothic SC', sans-serif;
 
 	label{
-		width: 50%;
+		width: 60%;
 		color: white;
+		font-size: 1rem;
+		margin-bottom: 15px;
 	}
 	input {
-		width: 50%;
+		width: 60%;
 		background-color: white;
-		
+		margin-bottom: 15px;
+		height: 40px;
 	}
 	textarea {
-		width: 50%;
+		width: 60%;
+		margin-bottom: 30px;
 	}
 	.button--container {
-		width: 50%;
+		width: 60%;
 		display: flex;
 		justify-content: flex-start;
-		border: 1px solid red;
 		button {
-			width: 100px;
-			height: 40px;
+			width: 75%;
+			height: 50px;
 			background-color: white;
 			font-family: 'Carrois Gothic SC', sans-serif;
-			font-size: 1rem;
+			font-size: 1.5rem;
+			text-transform: uppercase;
 		}
 	}
 `;
@@ -77,32 +80,29 @@ const ContactForm = () => {
 
 	return (
 		<Contact onSubmit={(e) => formSubmit(e)}>
-			<label className="message-name" htmlFor="message-name">Your Name</label>
+			<label className="message-name" htmlFor="message-name"> Name</label>
 			<input
 				onChange={(e) => setName(e.target.value)}
 				name="name"
 				className="message-name"
 				type="text"
-				placeholder="Your Name"
 				value={name}
 			/>
-			<label className="message-email" htmlFor="message-email">Your Email</label>
+			<label className="message-email" htmlFor="message-email"> Email</label>
 			<input
 				onChange={(e) => setEmail(e.target.value)}
 				name="email"
 				className="message-email"
 				type="email"
-				placeholder="your@email.com"
 				required
 				value={email}
 			/>
-			<label className="message" htmlFor="message-input">Your Message</label>
+			<label className="message" htmlFor="message-input"> Message</label>
 			<textarea
 				onChange={(e) => setMessage(e.target.value)}
 				name="message"
 				className="message-input"
 				type="text"
-				placeholder="Please write your message here"
 				value={message}
 				required
 			/>

@@ -2,21 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledSocials = styled.div`
-	border-bottom: 1px solid blue;
 	width: 50%;
 	.contact-container {
 		box-sizing: border-box;
 		width: 100%;
-		border: 1px solid yellowgreen;
 		box-sizing: border-box;
 		display: flex;
 		flex-flow: column;
 		a {
-			border: 1px solid red;
 			height: auto;
 			img {
 				width: 50px;
-				border: 1px solid blue;
 			}
 		}
 	}

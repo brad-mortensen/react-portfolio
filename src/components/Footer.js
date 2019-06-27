@@ -6,16 +6,26 @@ import Socials from './Socials';
 
 const StyledFooter = styled.div`
 	display:flex;
-	flex-flow: row;
+	flex-flow: row wrap;
 	height: auto;
-	padding-bottom: 50px;
+	padding: 20px 2% 50px 2%;
 	background-color: black;
+	h1 {
+		width: 100%;
+		color: white;
+		font-size: 2rem;
+		font-family: 'Carrois Gothic SC', sans-serif;
+		font-weight: lighter;
+		text-transform: uppercase;
+		margin-bottom: 60px;
+	}
 `;
 
 const Footer = () => {
 
 	return (
 		<StyledFooter>
+			<h1>Get in Touch</h1>
 			<ContactForm />
 			<Socials />
 		</StyledFooter>
