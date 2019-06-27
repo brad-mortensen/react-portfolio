@@ -12,18 +12,27 @@ const Contact = styled.form`
 	label{
 		width: 60%;
 		color: white;
-		font-size: 1rem;
+		font-size: 1.2rem;
 		margin-bottom: 15px;
 	}
 	input {
 		width: 60%;
 		background-color: white;
-		margin-bottom: 15px;
-		height: 40px;
+		margin-bottom: 20px;
+		height: 35px;
+		font-family: 'Carrois Gothic SC', sans-serif;
+		font-size: 1rem;
 	}
 	textarea {
+		box-sizing: border-box;
 		width: 60%;
-		margin-bottom: 30px;
+		height: 100px;
+		margin-bottom: 40px;
+		padding: 10px;
+		resize: none;
+		font-family: 'Carrois Gothic SC', sans-serif;
+		font-size: 1rem;
+
 	}
 	.button--container {
 		width: 60%;
