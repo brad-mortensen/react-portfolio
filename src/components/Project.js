@@ -13,7 +13,7 @@ const StyledProject = styled.div`
   .no-hover {
     width: 100%;
     height: auto;
-    transition: opacity .5s;   
+    transition: opacity .25s;   
     @media (max-width: 900px) {
       margin-bottom:40px;
     } 
@@ -21,29 +21,25 @@ const StyledProject = styled.div`
   .hover {
     width: 100%;
     height: auto;
-    opacity: .3;
-    transition: opacity .5s;
+    opacity: .2;
+    transition: opacity .25s;
     @media (max-width: 900px) { 
       margin-bottom:40px;
     }
   }
   .img-header {
     position: absolute;
-    bottom: 8px;
-    left: 16px;
+    bottom: 0px;
+    left: 6px;
+    font-size: 3rem;
     @media (max-width: 900px) { 
       font-size: 5rem;
     }
   }
-  .img-text {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-  }
   
 `;
 
-const Project = ({ project, toggleModal }) => {
+const Project = ({ project }) => {
   const { name, img } = project;
   const [hovering, setHovering] = useState(false);
   const [viewProject, setViewProject] = useState(false)

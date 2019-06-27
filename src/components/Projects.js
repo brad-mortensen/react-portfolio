@@ -13,7 +13,7 @@ const StyledProjects = styled.div`
   height: auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: top;
   flex-flow: row wrap;
   padding: 0 2% 30px 2%;
   background-color: black;
@@ -38,6 +38,7 @@ const Projects = () => {
       description: "Bonafind is a web application that helps you discover restaurants and businesses near you. Users can leave personalized reviews, find hours, photos and contact information related to the businesses. A user can upgrade their account for access to premium features such as leaving more than 3 reviews at a time.",
       stack: "React, Express, Node, PostgreSQL",
       img: bonafind,
+      website: 'bonafind.netlify.com/',
       id: 1
     },
     {
@@ -45,6 +46,7 @@ const Projects = () => {
       description: "A fundamental note-taking web application that helped me understand the finer details of lacing a React front end to a RESTful API built from scratch.",
       stack: "Vue, Express, Node, PostgreSQL",
       img: vueNotes,
+      website: 'https://notes-vue.herokuapp.com/',
       id: 2
     },
     {
@@ -52,6 +54,7 @@ const Projects = () => {
       description: "A full-featured Django blog application build from scratch. The app allows users to create a profile with a profile image (Hosted on AWS) and recieve a password reset email if needed.",
       stack: "Django, PostgreSQL",
       img: djangoBlog,
+      website: 'https://django-bloggo.herokuapp.com/',
       id: 3
     },
   ]

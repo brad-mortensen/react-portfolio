@@ -10,7 +10,7 @@ const StyledProjectModal = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(4, 0, 0, 0.9);
+  background: rgba(255, 255, 255, 0.6);
   z-index: 100;
   .project-modal {
     width: 66%;
@@ -18,25 +18,49 @@ const StyledProjectModal = styled.div`
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    background-color: white;
+    background-color: black;
     @media (max-width: 900px) { 
-      width: 100%;
+      width: 90%;
     }
     img {
       width: 100%;
     }
+    .text-container {
+      font-family: 'Montserrat', sans-serif;
+      padding: 30px 3% 20px 2%;
+      h3{
+      /* font-family: 'Carrois Gothic SC', sans-serif; */
+      color: black;
+      font-size: 3rem;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 2rem;
+      }
+      p {
+        /* font-family: 'Carrois Gothic SC', sans-serif; */
+        font-size: 1.2rem;
+        color: white;        
+      }
+    }
+    
   }
 `;
 
 
 
 const ProjectModal = ({ setViewProject, project }) => {
+  const { name, description, img, website } = project;
   return (
     <StyledProjectModal onClick={() => setViewProject(false)} className="project-container">
       <div className="project-modal">
-        <img src={project.img} alt={project.name}/>
-        <h3>{project.name}</h3>
-        <p>{project.description}</p>
+        <img src={img} alt={name} />
+        <div className="text-container">
+          {/* <h3>{name}</h3> */}
+          <a href={website} target='_blank' rel="noopener noreferrer">{name}</a>
+          <p>{description}</p>
+        </div>
       </div>
     </StyledProjectModal>
   )
