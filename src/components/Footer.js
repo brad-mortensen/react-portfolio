@@ -8,6 +8,7 @@ const StyledFooter = styled.div`
 	display:flex;
 	flex-flow: row;
 	height: auto;
+	padding-bottom: 50px;
 `;
 
 const Footer = () => {

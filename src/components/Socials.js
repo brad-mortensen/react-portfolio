@@ -9,7 +9,8 @@ const StyledSocials = styled.div`
 		width: 100%;
 		border: 1px solid yellowgreen;
 		box-sizing: border-box;
-
+		display: flex;
+		flex-flow: column;
 		a {
 			border: 1px solid red;
 			height: auto;
