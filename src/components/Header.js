@@ -9,7 +9,6 @@ const StyledHeader = styled.div`
 `;
 
 const Header = () => {
-
   return (
     <StyledHeader>
       <NavBar />

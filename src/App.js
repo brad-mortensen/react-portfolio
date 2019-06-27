@@ -11,7 +11,9 @@ const Container = styled.div`
 	margin: 0 auto; */
 `;
 
-function App() {
+
+const App = () => {
+
 	return (
 		<Container className="App">
 			<Header />

@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import Emoji from './Emoji';
+
 const StyledProjectModal = styled.div`
   position: fixed;
   top: 0;
@@ -58,7 +60,14 @@ const ProjectModal = ({ setViewProject, project }) => {
         <img src={img} alt={name} />
         <div className="text-container">
           {/* <h3>{name}</h3> */}
-          <a href={website} target='_blank' rel="noopener noreferrer"><span role="img">🔗</span> {cleanWebsite}</a>
+          <a
+            href={website}
+            target='_blank'
+            rel="noopener noreferrer">
+            <Emoji symbol="🔗" label="link" />
+            <span> </span>
+            {cleanWebsite}
+          </a>
           <p>{description}</p>
         </div>
       </div>

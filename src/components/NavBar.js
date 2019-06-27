@@ -19,8 +19,7 @@ const StyledNav = styled.div`
     display: flex;
     width: 30%;
     height: auto;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
     p {
       cursor: pointer;
       height: 20px;

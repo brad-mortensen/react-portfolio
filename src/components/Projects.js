@@ -39,7 +39,7 @@ const Projects = () => {
       stack: "React, Express, Node, PostgreSQL",
       img: bonafind,
       website: 'https://bonafind.netlify.com/',
-      cleanWebsite: 'https://bonafind.netlify.com/',
+      cleanWebsite: 'bonafind.biz/',
       id: 1
     },
     {
@@ -52,7 +52,7 @@ const Projects = () => {
       id: 2
     },
     {
-      name: "Django Blog",
+      name: "Bloggo",
       description: "A full-featured Django blog application build from scratch. The app allows users to create a profile with a profile image (Hosted on AWS) and recieve a password reset email if needed.",
       stack: "Django, PostgreSQL",
       img: djangoBlog,
