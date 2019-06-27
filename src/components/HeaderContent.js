@@ -17,7 +17,7 @@ const StyledHeaderContent = styled.div`
     font-family: 'Carrois Gothic SC', sans-serif;
     font-size: 3rem;
     text-transform: uppercase;
-    line-height: 50px;
+    line-height: 55px;
   }
   .down-arrow {
     width: 15%;
@@ -36,7 +36,7 @@ const StyledHeaderContent = styled.div`
 const HeaderContent = () => {
   return (
     <StyledHeaderContent>
-      <p className="intro">Hi, I'm Brad Mortensen.<br></br>software developer.</p>
+      <p className="intro">Hi, I'm Brad Mortensen.<br></br>full-stack web developer.</p>
       <img className="down-arrow" src={downArrow}  alt="down-arrow" />
     </StyledHeaderContent>
   )

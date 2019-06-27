@@ -4,24 +4,36 @@ import styled from 'styled-components';
 import ProjectModal from './ProjectModal';
 
 const StyledProject = styled.div`
-  width: 31%;
+  width: 32%;
   box-sizing: border-box;
   position: relative;
+  @media (max-width: 900px) {
+    width: 96%;
+  }
   .no-hover {
     width: 100%;
     height: auto;
-    transition: opacity .5s;    
+    transition: opacity .5s;   
+    @media (max-width: 900px) {
+      margin-bottom:40px;
+    } 
   }
   .hover {
     width: 100%;
     height: auto;
     opacity: .3;
     transition: opacity .5s;
+    @media (max-width: 900px) { 
+      margin-bottom:40px;
+    }
   }
   .img-header {
     position: absolute;
     bottom: 8px;
     left: 16px;
+    @media (max-width: 900px) { 
+      font-size: 5rem;
+    }
   }
   .img-text {
     position: absolute;

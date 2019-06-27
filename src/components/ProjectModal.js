@@ -10,15 +10,18 @@ const StyledProjectModal = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(4, 0, 0, 0.7);
-  .delete-modal {
-    width: 75%;
+  background: rgba(4, 0, 0, 0.9);
+  z-index: 100;
+  .project-modal {
+    width: 66%;
     height: auto;
-    border: 1px solid black;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     background-color: white;
+    @media (max-width: 900px) { 
+      width: 100%;
+    }
     img {
       width: 100%;
     }
@@ -29,8 +32,8 @@ const StyledProjectModal = styled.div`
 
 const ProjectModal = ({ setViewProject, project }) => {
   return (
-    <StyledProjectModal onClick={() => setViewProject(false)} className="delete-container">
-      <div className="delete-modal">
+    <StyledProjectModal onClick={() => setViewProject(false)} className="project-container">
+      <div className="project-modal">
         <img src={project.img} alt={project.name}/>
         <h3>{project.name}</h3>
         <p>{project.description}</p>
