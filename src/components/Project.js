@@ -4,9 +4,10 @@ import styled from 'styled-components';
 import ProjectModal from './ProjectModal';
 
 const StyledProject = styled.div`
-  width: 32%;
+  width: 47%;
   box-sizing: border-box;
   position: relative;
+  margin-bottom: 30px;
   @media (max-width: 900px) {
     width: 96%;
   }

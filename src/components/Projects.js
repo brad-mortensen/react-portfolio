@@ -13,7 +13,7 @@ const StyledProjects = styled.div`
   border-bottom: 1px solid orange;
   height: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: top;
   flex-flow: row wrap;
   padding: 0 2% 30px 2%;
