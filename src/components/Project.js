@@ -62,13 +62,13 @@ const Project = ({ project }) => {
             className="no-hover"
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
-            onClick={() => setViewProject(true)}            
+            onClick={() => setViewProject(true)}
             src={img}
             alt={name}
           />
         }
       </StyledProject>
-      {viewProject ? <ProjectModal project={project} setViewProject={setViewProject}/> : null}
+      {viewProject ? <ProjectModal project={project} setViewProject={setViewProject} /> : null}
     </>
   )
 }

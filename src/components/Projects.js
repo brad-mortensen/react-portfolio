@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import bonafind from './assets/bonafind.png';
 import vueNotes from './assets/vue-notes.png';
 import djangoBlog from './assets/django-blog.png';
+import pairMe from './assets/pair-me.png';
 
 import Project from './Project';
 
@@ -33,6 +34,14 @@ const StyledProjects = styled.div`
 
 const Projects = () => {
   const projectData = [
+    {
+      name: "PairMe",
+      description: "PairMe was built during a three day hackathon and is one of my favorite projects I've ever built. We tried to find a way to make it easier for people who wanted to pair program, but didn't have the opportunity, to find someone to work with. ",
+      img: pairMe,
+      website: 'https://pair-me.netlify.com/',
+      cleanWebsite: 'pair-me.netlify.com',
+      id: 0
+    },
     {
       name: "Bonafind",
       description: "Bonafind is a web application that helps you discover restaurants and businesses near you. Users can leave personalized reviews, find hours, photos and contact information related to the businesses. A user can upgrade their account for access to premium features such as leaving more than 3 reviews at a time.",
