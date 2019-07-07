@@ -40,7 +40,13 @@ const Skills = () => {
     },
     {
       groupName: "backend",
-      assets: [],
+      assets: [
+        // {
+        //   name:
+        //   img,
+        //   id:0
+        // }
+      ],
       id: 2
     },
     {
