@@ -10,7 +10,6 @@ import Project from './Project';
 const StyledProjects = styled.div`
   box-sizing: border-box;
   width: 100%;
-  border-bottom: 1px solid orange;
   height: auto;
   display: flex;
   justify-content: space-around;
