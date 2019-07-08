@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import bonafind from './assets/bonafind.png';
 import vueNotes from './assets/vue-notes.png';
 import djangoBlog from './assets/django-blog.png';
@@ -70,7 +71,7 @@ const Projects = () => {
   ]
   return (
     <StyledProjects>
-      <h1 className="projects">projects</h1>
+      <h1 className="Projects">Projects</h1>
       {projectData.map((project) =>
         <Project project={project} key={project.id} />
       )}

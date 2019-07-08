@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import downArrow from './assets/angle-double-down.svg';
+import Slide from 'react-reveal/Slide';
 
 const StyledHeaderContent = styled.div`
   width: 100%;
@@ -11,7 +12,7 @@ const StyledHeaderContent = styled.div`
   margin: 70px 0;
   padding: 0 2%;
   box-sizing: border-box;
-  .intro {
+  .title {
     width: 100%;
     height: auto;
     font-family: 'Carrois Gothic SC', sans-serif;
@@ -23,7 +24,6 @@ const StyledHeaderContent = styled.div`
     width: 15%;
     height: auto;
     margin: 100px 0 10px 0;
-    visibility: visible;
     animation: flasher 2s linear infinite;
   }
   @keyframes flasher {
@@ -31,13 +31,23 @@ const StyledHeaderContent = styled.div`
     opacity: 0;
     }
   }
+  .intro {
+    font-size: 1.5rem;
+    font-family: 'Carrois Gothic SC', sans-serif;
+  }
 `;
 
 const HeaderContent = () => {
   return (
     <StyledHeaderContent>
-      <p className="intro">Hi, I'm Brad Mortensen.<br></br>full-stack web developer.</p>
-      <img className="down-arrow" src={downArrow}  alt="down-arrow" />
+      <Slide left>
+        <p className="title">Hi, I'm Brad Mortensen.
+          <br>
+          </br>full-stack web developer.
+        </p>
+      </Slide>
+      <img className="down-arrow" src={downArrow} alt="down-arrow" />
+      <p className="intro">This is a test linker</p>
     </StyledHeaderContent>
   )
 }

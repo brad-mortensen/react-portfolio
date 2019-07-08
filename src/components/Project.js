@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
+
 import ProjectModal from './ProjectModal';
 
 const StyledProject = styled.div`
@@ -69,8 +70,9 @@ const Project = ({ project }) => {
           />
         }
       </StyledProject>
-      {viewProject ? <ProjectModal project={project} setViewProject={setViewProject} /> : null}
+      {viewProject ? <ProjectModal project={project} setViewProject={setViewProject} />: null}
     </>
+
   )
 }
 
