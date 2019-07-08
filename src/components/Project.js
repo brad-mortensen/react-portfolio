@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-
 import ProjectModal from './ProjectModal';
 
 const StyledProject = styled.div`
@@ -37,8 +36,7 @@ const StyledProject = styled.div`
     @media (max-width: 900px) { 
       font-size: 5rem;
     }
-  }
-  
+  }  
 `;
 
 const Project = ({ project }) => {

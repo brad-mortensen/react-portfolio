@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Slide from 'react-reveal/Slide';
 
 
 import Emoji from './Emoji';
@@ -57,25 +56,23 @@ const StyledProjectModal = styled.div`
 const ProjectModal = ({ setViewProject, project }) => {
   const { name, description, img, website, cleanWebsite } = project;
   return (
-    <Slide>
-      <StyledProjectModal onClick={() => setViewProject(false)} className="project-container">
-        <div className="project-modal">
-          <img src={img} alt={name} />
-          <div className="text-container">
-            {/* <h3>{name}</h3> */}
-            <a
-              href={website}
-              target='_blank'
-              rel="noopener noreferrer">
-              <Emoji symbol="🔗" label="link" />
-              <span> </span>
-              {cleanWebsite}
-            </a>
-            <p>{description}</p>
-          </div>
+    <StyledProjectModal onClick={() => setViewProject(false)} className="project-container">
+      <div className="project-modal">
+        <img src={img} alt={name} />
+        <div className="text-container">
+          {/* <h3>{name}</h3> */}
+          <a
+            href={website}
+            target='_blank'
+            rel="noopener noreferrer">
+            <Emoji symbol="🔗" label="link" />
+            <span> </span>
+            {cleanWebsite}
+          </a>
+          <p>{description}</p>
         </div>
-      </StyledProjectModal>
-    </Slide>
+      </div>
+    </StyledProjectModal>
   )
 }
 

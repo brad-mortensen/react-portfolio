@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import downArrow from './assets/angle-double-down.svg';
-import Slide from 'react-reveal/Slide';
 
 const StyledHeaderContent = styled.div`
   width: 100%;
@@ -40,12 +39,10 @@ const StyledHeaderContent = styled.div`
 const HeaderContent = () => {
   return (
     <StyledHeaderContent>
-      <Slide left>
-        <p className="title">Hi, I'm Brad Mortensen.
+      <p className="title">Hi, I'm Brad Mortensen.
           <br>
-          </br>full-stack web developer.
-        </p>
-      </Slide>
+        </br>full-stack web developer.
+      </p>
       <img className="down-arrow" src={downArrow} alt="down-arrow" />
       <p className="intro">This is a test linker</p>
     </StyledHeaderContent>
