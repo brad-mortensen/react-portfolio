@@ -3,6 +3,10 @@ import styled from 'styled-components';
 
 const StyledSocials = styled.div`
 	width: 50%;
+	@media(max-width:510px) {
+		width: 100%;
+		margin-top: 50px;
+	}
 	.contact-container {
 		box-sizing: border-box;
 		width: 100%;

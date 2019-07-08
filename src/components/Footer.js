@@ -10,6 +10,10 @@ const StyledFooter = styled.div`
 	height: auto;
 	padding: 20px 2% 50px 2%;
 	background-color: black;
+	box-sizing: border-box;
+	@media(max-width:510px) {
+		flex-flow: column;
+	}
 	h1 {
 		width: 100%;
 		color: white;

@@ -8,7 +8,9 @@ const Contact = styled.form`
 	flex-flow: column;
 	align-items: center;
 	font-family: 'Carrois Gothic SC', sans-serif;
-
+	@media(max-width:510px) {
+		width: 100%;
+	}
 	label{
 		width: 60%;
 		color: white;
