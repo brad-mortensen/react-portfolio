@@ -13,6 +13,9 @@ const StyledSkillGroup = styled.div`
   h3 {
     color: white;
   }
+  .skill-imgs {
+    width: 100%;
+  }
 `;
 
 const SkillGroup = ({skill}) => {
@@ -20,9 +23,9 @@ const SkillGroup = ({skill}) => {
   return (
     <StyledSkillGroup>
       <h3>{groupName}</h3>
-      <div className="skill-img">
+      <div className="skill-imgs">
         {assets.map(asset=>
-          <img src={asset} alt={asset.name}/>
+          <img src={asset.img} alt={asset.name}/>
         )}
       </div>
     </StyledSkillGroup>

@@ -1,15 +1,16 @@
 import React from 'react';
-import javascript from './assets/javascript';
-import nodejs from './assets/nodejs-1';
-import npm from './assets/npm';
-import postgresql from './assets/postgresql';
-import vue from './assets/vue-9';
-import react from './assets/react';
-import python from './assets/python-5';
-import yarn from './assets/yarn';
-import sqlite from './assets/sqlite';
-import c from './assets/c';
-import django from './assets/django';
+import javascript from './assets/javascript.svg';
+import nodejs from './assets/nodejs-1.svg';
+import npm from './assets/npm.svg';
+import postgresql from './assets/postgresql.svg';
+import vue from './assets/vue-9.svg';
+import react from './assets/react.svg';
+import python from './assets/python-5.svg';
+import yarn from './assets/yarn.svg';
+import sqlite from './assets/sqlite.svg';
+import c from './assets/c.svg';
+import django from './assets/django.svg';
+import git from './assets/git.svg';
 
 
 import styled from 'styled-components';
@@ -68,19 +69,19 @@ const Skills = () => {
       groupName: "frontend",
       assets: [
         {
-          name:'react',
+          name: 'react',
           img: react,
-          id:0
+          id: 0
         },
         {
-          name:'vue',
+          name: 'vue',
           img: vue,
-          id:1
+          id: 1
         },
         {
-          name:'django',
+          name: 'django',
           img: django,
-          id:2
+          id: 2
         }
       ],
       id: 1
@@ -110,19 +111,19 @@ const Skills = () => {
       groupName: "tools",
       assets: [
         {
-          name:'git',
+          name: 'git',
           img: git,
-          id:0
+          id: 0
         },
         {
-          name:'npm',
+          name: 'npm',
           img: npm,
-          id:1
+          id: 1
         },
         {
-          name:'yarn',
-          img:yarn,
-          id:2
+          name: 'yarn',
+          img: yarn,
+          id: 2
         }
       ],
       id: 3
