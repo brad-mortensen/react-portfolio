@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
 import Emoji from './Emoji';
 
 const StyledProjectModal = styled.div`
@@ -15,6 +14,7 @@ const StyledProjectModal = styled.div`
   align-items: center;
   background: rgba(255, 255, 255, 0.6);
   z-index: 100;
+  
   .project-modal {
     width: 66%;
     height: auto;
