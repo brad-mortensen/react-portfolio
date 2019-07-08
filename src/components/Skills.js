@@ -124,7 +124,7 @@ const Skills = () => {
     },
   ]
   return (
-    <StyledSkills>
+    <StyledSkills id="skills">
       <p>Technical Skills</p>
       {skillData.map(skill =>
         <SkillGroup skill={skill} key={skill.id} />

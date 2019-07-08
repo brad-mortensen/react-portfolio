@@ -27,7 +27,6 @@ const StyledProjects = styled.div`
   }
   h1 {
     width: 100%;
-    text-align: center;
     font-family: 'Carrois Gothic SC', sans-serif;
     font-size: 2rem;
     font-weight: lighter;
@@ -74,8 +73,8 @@ const Projects = () => {
     },
   ]
   return (
-    <StyledProjects>
-      <h1 className="Projects">Check Out Some of My Favorite Projects</h1>
+    <StyledProjects id="projects">
+      <h1 className="Projects">Projects</h1>
       {projectData.map((project) =>
         <Project project={project} key={project.id} />
       )}

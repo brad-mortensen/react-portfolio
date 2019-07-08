@@ -2,19 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 
 import ContactForm from './ContactForm';
-import Socials from './Socials';
 
 const StyledFooter = styled.div`
 	display:flex;
 	flex-flow: row wrap;
 	height: auto;
-	padding: 20px 2% 50px 2%;
+	padding: 20px 5% 50px 5%;
 	background-color: black;
 	box-sizing: border-box;
 	@media(max-width:510px) {
 		flex-flow: column;
 	}
-	h1 {
+	p {
 		width: 100%;
 		color: white;
 		font-size: 2rem;
@@ -28,10 +27,9 @@ const StyledFooter = styled.div`
 const Footer = () => {
 
 	return (
-		<StyledFooter>
-			<h1>Get in Touch</h1>
+		<StyledFooter id="contact">
+			<p>Get in Touch</p>
 			<ContactForm />
-			<Socials />
 		</StyledFooter>
 	);
 };

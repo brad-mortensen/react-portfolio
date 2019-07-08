@@ -3,6 +3,7 @@ import Slide from 'react-reveal/Slide';
 import styled from 'styled-components';
 import downArrow from './assets/angle-double-down.svg';
 import brad from './assets/brad.jpg';
+import Socials from './Socials';
 
 const StyledHeaderContent = styled.div`
   width: 100%;
@@ -52,14 +53,12 @@ const StyledHeaderContent = styled.div`
     50% {
     opacity: 0;
     }
-  }
-
-  
+  }  
 `;
 const StyledIntroContainer = styled.div`
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 100px;
   width: 100%;
   background-color: #00d1b2;
@@ -70,12 +69,18 @@ const StyledIntroContainer = styled.div`
     font-size: 2rem;
     font-family: 'Carrois Gothic SC', sans-serif;
   }
-  .me {
-    width: 15%;
-  }
+  .img-container {
+    width: 200px;
+    .me {
+      width: 100%;
+      
+      height: auto;
+    }
+  }  
   .intro {
     font-size: 1.5rem;
-    width: 60%;
+    text-align: left;
+    width: 40%;
     font-family: 'Carrois Gothic SC', sans-serif;
   }
 `;
@@ -89,13 +94,14 @@ const HeaderContent = () => {
         </p>
         </Slide>
         <img className="down-arrow" src={downArrow} alt="down-arrow" />
-        
+
 
       </StyledHeaderContent>
       <StyledIntroContainer className="intro-container">
         <p>About Me:</p>
-        <img className="me" src={brad} alt='me!' />
-        <p className="intro">This is a test linker</p>
+        <div className="img-container"><img className="me" src={brad} alt='me!' /></div>
+        <p className="intro">Hi! I'm Denver based web developer looking for a frontend or fullstack role with a great company. Check out a sample of my projects below. </p>
+        <Socials/>
       </StyledIntroContainer>
     </>
   )
