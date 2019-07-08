@@ -2,6 +2,7 @@ import React from 'react';
 import Slide from 'react-reveal/Slide';
 import styled from 'styled-components';
 import downArrow from './assets/angle-double-down.svg';
+import brad from './assets/brad.jpg';
 
 const StyledHeaderContent = styled.div`
   width: 100%;
@@ -11,6 +12,7 @@ const StyledHeaderContent = styled.div`
   align-items: center;
   margin: 70px 0;
   padding: 0 2%;
+  padding-top: 100px;
   box-sizing: border-box;
   @media(max-width: 700px) {
   }
@@ -51,23 +53,51 @@ const StyledHeaderContent = styled.div`
     opacity: 0;
     }
   }
+
+  
+`;
+const StyledIntroContainer = styled.div`
+  border: 1px solid red;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 100px;
+  width: 100%;
+  background-color: #00d1b2;
+  h3{
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    font-family: 'Carrois Gothic SC', sans-serif;
+  }
+  .me {
+    width: 15%;
+  }
   .intro {
     font-size: 1.5rem;
+    width: 60%;
     font-family: 'Carrois Gothic SC', sans-serif;
   }
 `;
-
 const HeaderContent = () => {
   return (
-    <StyledHeaderContent>
-      <Slide left><p className="title">Hi, I'm Brad Mortensen.
+    <>
+      <StyledHeaderContent>
+        <Slide left><p className="title">Hi, I'm Brad Mortensen.
         <br>
           </br>full-stack web developer.
         </p>
-      </Slide>
-      <img className="down-arrow" src={downArrow} alt="down-arrow" />
-      <p className="intro">This is a test linker</p>
-    </StyledHeaderContent>
+        </Slide>
+        <img className="down-arrow" src={downArrow} alt="down-arrow" />
+        
+
+      </StyledHeaderContent>
+      <StyledIntroContainer className="intro-container">
+        <h3>About Me:</h3>
+        <img className="me" src={brad} alt='me!' />
+        <p className="intro">This is a test linker</p>
+      </StyledIntroContainer>
+    </>
   )
 }
 

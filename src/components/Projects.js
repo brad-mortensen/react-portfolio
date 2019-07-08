@@ -19,9 +19,11 @@ const StyledProjects = styled.div`
   padding: 0 5% 30px 5%;
   background-color: black;
   @media (max-width: 900px) {
+    padding: 0 2%;
+  }
+  @media (max-width: 500px) {
     flex-flow: column;
     align-items: center;
-    padding: 0 2%;
   }
   h1 {
     width: 100%;

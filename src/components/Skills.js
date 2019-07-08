@@ -26,7 +26,7 @@ const StyledSkills = styled.div`
   justify-content: space-around;
   align-items: top;
   flex-flow: row wrap;
-  padding: 0 2% 30px 2%;
+  padding: 0 5% 30px 5%;
   background-color: white;
   h1 {
     width: 100%;

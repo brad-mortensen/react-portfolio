@@ -8,8 +8,9 @@ const StyledProject = styled.div`
   box-sizing: border-box;
   position: relative;
   margin-bottom: 30px;
-  @media (max-width: 900px) {
+  @media (max-width: 500px) {
     width: 96%;
+    margin-bottom: 10px;
   }
   .no-hover {
     width: 100%;
@@ -33,9 +34,6 @@ const StyledProject = styled.div`
     bottom: 0px;
     left: 6px;
     font-size: 3rem;
-    @media (max-width: 900px) { 
-      font-size: 5rem;
-    }
   }  
 `;
 
