@@ -29,8 +29,10 @@ margin-top: 10px;
     @media(max-width: 700px) {
       width: 70%;
     }
-    p {
+    a {
       cursor: pointer;
+      text-decoration: none;
+      color: black;
       height: 20px;
       text-transform: uppercase;
       font-size: 1rem;
@@ -51,9 +53,9 @@ const NavBar = () => {
   return (
     <StyledNav>
       <div className="nav-links">
-        <p className="projects">Projects</p>
-        <p className="skills">Skills</p>
-        <p className="contact">Contact</p>
+        <a href="#projects" className="projects">Projects</a>
+        <a href="#skills" className="skills">Skills</a>
+        <a href="#contact" className="contact">Contact</a>
       </div>
       <h1 className="main-header">{name}</h1>
     </StyledNav>
