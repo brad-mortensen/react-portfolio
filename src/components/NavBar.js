@@ -24,10 +24,11 @@ margin-top: 10px;
     display: flex;
     width: 30%;
     height: auto;
-    justify-content: space-between; 
+    justify-content: space-between;
+    box-sizing:border-box;
     @media(max-width: 700px) {
       width: 70%;
-      }
+    }
     p {
       cursor: pointer;
       height: 20px;

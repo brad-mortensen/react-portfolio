@@ -12,6 +12,8 @@ const StyledHeaderContent = styled.div`
   margin: 70px 0;
   padding: 0 2%;
   box-sizing: border-box;
+  @media(max-width: 700px) {
+  }
 
   .title {
     width: 100%;
