@@ -6,12 +6,15 @@ const StyledSkillGroup = styled.div`
   height: auto;
   box-sizing: border-box;
   position: relative;
-  border: 1px solid black;
   margin-bottom: 30px;
   background-color: white;
   padding-bottom: 10px;
-  h3 {
+  border-radius: 5px;
+  .skill-header {
     color: black;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-size: 1rem;
+    padding-left: 10%;
   }
   .skill-imgs {
     width: 100%;
@@ -20,7 +23,7 @@ const StyledSkillGroup = styled.div`
     justify-content: space-around;
     align-items: center;
     img {
-      width: 25%;
+      width: 20%;
     }
   }
 `;
@@ -29,7 +32,7 @@ const SkillGroup = ({skill}) => {
   const {groupName, assets} = skill;
   return (
     <StyledSkillGroup>
-      <h3>{groupName}</h3>
+      <p className="skill-header">{groupName}</p>
       <div className="skill-imgs">
         {assets.map(asset=>
           <img src={asset.img} alt={asset.name}/>

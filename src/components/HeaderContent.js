@@ -57,14 +57,14 @@ const StyledHeaderContent = styled.div`
   
 `;
 const StyledIntroContainer = styled.div`
-  border: 1px solid red;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   margin-top: 100px;
   width: 100%;
   background-color: #00d1b2;
-  h3{
+  padding-bottom: 50px;
+  p{
     text-align: center;
     width: 100%;
     font-size: 2rem;
@@ -93,7 +93,7 @@ const HeaderContent = () => {
 
       </StyledHeaderContent>
       <StyledIntroContainer className="intro-container">
-        <h3>About Me:</h3>
+        <p>About Me:</p>
         <img className="me" src={brad} alt='me!' />
         <p className="intro">This is a test linker</p>
       </StyledIntroContainer>

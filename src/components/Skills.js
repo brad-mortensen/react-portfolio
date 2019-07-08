@@ -27,12 +27,11 @@ const StyledSkills = styled.div`
   align-items: top;
   flex-flow: row wrap;
   padding: 0 5% 30px 5%;
-  background-color: white;
-  h1 {
+  background-color: #00d1b2;
+  p {
     width: 100%;
     font-family: 'Carrois Gothic SC', sans-serif;
     font-size: 2rem;
-    font-weight: lighter;
     color: black;
   }
 `;
@@ -126,7 +125,7 @@ const Skills = () => {
   ]
   return (
     <StyledSkills>
-      <h1>Skills</h1>
+      <p>Technical Skills</p>
       {skillData.map(skill =>
         <SkillGroup skill={skill} key={skill.id} />
       )}
