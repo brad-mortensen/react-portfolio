@@ -16,7 +16,7 @@ const StyledProjects = styled.div`
   justify-content: space-around;
   align-items: top;
   flex-flow: row wrap;
-  padding: 0 2% 30px 2%;
+  padding: 0 5% 30px 5%;
   background-color: black;
   @media (max-width: 900px) {
     flex-flow: column;
@@ -25,10 +25,12 @@ const StyledProjects = styled.div`
   }
   h1 {
     width: 100%;
+    text-align: center;
     font-family: 'Carrois Gothic SC', sans-serif;
     font-size: 2rem;
     font-weight: lighter;
     color: white;
+    margin-bottom: 30px;
   }
 `;
 
@@ -71,7 +73,7 @@ const Projects = () => {
   ]
   return (
     <StyledProjects>
-      <h1 className="Projects">Projects</h1>
+      <h1 className="Projects">Check Out Some of My Favorite Projects</h1>
       {projectData.map((project) =>
         <Project project={project} key={project.id} />
       )}
