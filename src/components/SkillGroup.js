@@ -15,6 +15,9 @@ const StyledSkillGroup = styled.div`
   }
   .skill-imgs {
     width: 100%;
+    img {
+      width: 25%;
+    }
   }
 `;
 
