@@ -3,18 +3,22 @@ import styled from 'styled-components'
 
 const StyledSkillGroup = styled.div`
   width: 47%;
+  height: auto;
   box-sizing: border-box;
   position: relative;
+  border: 1px solid black;
   margin-bottom: 30px;
-  background-color: black;
-  @media (max-width: 900px) {
-    width: 96%;
-  }
+  background-color: white;
+  padding-bottom: 10px;
   h3 {
-    color: white;
+    color: black;
   }
   .skill-imgs {
     width: 100%;
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
     img {
       width: 25%;
     }

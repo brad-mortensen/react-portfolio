@@ -28,11 +28,6 @@ const StyledSkills = styled.div`
   flex-flow: row wrap;
   padding: 0 2% 30px 2%;
   background-color: white;
-  @media (max-width: 900px) {
-    flex-flow: column;
-    align-items: center;
-    padding: 0 2%;
-  }
   h1 {
     width: 100%;
     font-family: 'Carrois Gothic SC', sans-serif;
