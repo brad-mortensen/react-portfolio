@@ -31,20 +31,21 @@ const StyledProjectModal = styled.div`
     .text-container {
       font-family: 'Montserrat', sans-serif;
       padding: 30px 3% 20px 2%;
-      h3{
-      /* font-family: 'Carrois Gothic SC', sans-serif; */
-      color: black;
-      font-size: 3rem;
-      }
       a {
         text-decoration: none;
         color: white;
         font-size: 2rem;
+        @media(max-width: 500px) {
+          font-size: 1rem;
+        }
       }
       p {
         /* font-family: 'Carrois Gothic SC', sans-serif; */
         font-size: 1.2rem;
-        color: white;        
+        color: white;
+        @media(max-width: 500px) {
+          font-size: .8rem;
+        }        
       }
     }
     
