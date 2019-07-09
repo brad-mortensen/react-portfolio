@@ -16,6 +16,7 @@ const StyledHeaderContent = styled.div`
   padding-top: 100px;
   box-sizing: border-box;
   @media(max-width: 700px) {
+    padding-top: 0;
   }
 
   .title {
@@ -43,6 +44,7 @@ const StyledHeaderContent = styled.div`
     animation: flasher 2s linear infinite;
     @media (max-width: 900px) {
       width: 25%;
+      margin-top: 30px;
     }
     @media (max-width: 650px) {
       width: 35%;
