@@ -73,19 +73,36 @@ const StyledIntroContainer = styled.div`
   padding: 0 5%;
   padding-bottom: 50px;
   box-sizing: border-box;
+  @media(max-width:950px){
+    height: 430px;
+  }
+  @media(max-width:810px){
+    height: auto;
+  }
   p{
     width: 100%;
     font-size: 2rem;
     font-family: 'Carrois Gothic SC', sans-serif;
+    
   }
   .introductions {
     width: 100%;
+    height: auto;
     display: flex;
     flex-flow: row;
     align-items: center;
     justify-content: space-around;
+    @media(max-width:810px){
+      margin-top: 0;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
     .img-container {
       width: 200px;
+      @media(max-width: 810px){
+        width: 100px;
+        margin: 0 40%;
+      }
       .me {
         width: 100%;        
         height: auto;
@@ -95,8 +112,17 @@ const StyledIntroContainer = styled.div`
     .intro {
       font-size: 1.5rem;
       text-align: left;
-      max-width: 400px;
+      width: 400px;
       font-family: 'Carrois Gothic SC', sans-serif;
+      @media(max-width:1200px){
+        width: 300px;
+      }
+      @media(max-width:950px){
+        width: 250px;
+      }
+      @media(max-width:810px){
+        margin-right: 30px;
+      }
     }
   }  
 `;
