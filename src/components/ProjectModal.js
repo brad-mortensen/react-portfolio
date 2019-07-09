@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 
 import Emoji from './Emoji';
 
@@ -58,21 +59,23 @@ const ProjectModal = ({ setViewProject, project }) => {
   const { name, description, img, website, cleanWebsite } = project;
   return (
     <StyledProjectModal onClick={() => setViewProject(false)} className="project-container">
-      <div className="project-modal">
-        <img src={img} alt={name} />
-        <div className="text-container">
-          {/* <h3>{name}</h3> */}
-          <a
-            href={website}
-            target='_blank'
-            rel="noopener noreferrer">
-            <Emoji symbol="🔗" label="link" />
-            <span> </span>
-            {cleanWebsite}
-          </a>
-          <p>{description}</p>
+      <Fade top>
+        <div className="project-modal">
+          <img src={img} alt={name} />
+          <div className="text-container">
+            {/* <h3>{name}</h3> */}
+            <a
+              href={website}
+              target='_blank'
+              rel="noopener noreferrer">
+              <Emoji symbol="🔗" label="link" />
+              <span> </span>
+              {cleanWebsite}
+            </a>
+            <p>{description}</p>
+          </div>
         </div>
-      </div>
+      </Fade>
     </StyledProjectModal>
   )
 }

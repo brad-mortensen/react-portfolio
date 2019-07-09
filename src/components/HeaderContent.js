@@ -41,13 +41,18 @@ const StyledHeaderContent = styled.div`
     width: 15%;
     height: auto;
     margin: 100px 0 10px 0;
-    animation: flasher 2s linear infinite;
+    
     @media (max-width: 900px) {
       width: 25%;
       margin-top: 30px;
     }
     @media (max-width: 650px) {
       width: 35%;
+    }
+    .arrow-img {
+      width: 100%;
+      height: auto;
+      animation: flasher 2s linear infinite;
     }
   }
   
@@ -105,7 +110,7 @@ const HeaderContent = () => {
           </br>full-stack web developer.
         </p>
         </Slide>
-        <img className="down-arrow" src={downArrow} alt="down-arrow" />
+        <a href="#projects" className="down-arrow"><img className="arrow-img" src={downArrow} alt="down-arrow" /></a>
 
 
       </StyledHeaderContent>
