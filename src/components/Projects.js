@@ -69,6 +69,7 @@ const Projects = () => {
       description: "A full-featured Django blog application build from scratch. The app allows users to create a profile with a profile image (Hosted on AWS) and recieve a password reset email if needed. This app was built as a way to refine my Python skills and become more familiar with Django",
       stack: "Django, PostgreSQL",
       img: djangoBlog,
+      cleanWebsite: 'http://django-bloggo.herokuapp.com/',
       cleanWebsite: 'django-bloggo.herokuapp.com/',
       id: 3
     },
