@@ -6,14 +6,16 @@ const StyledSocials = styled.div`
 	display: flex;
 	flex-flow: column;
 	align-items: flex-start;
-	height: 100%;
+	justify-content: center;
+	width: 50%;
+	padding-left: 10%;
 	a {
 		font-family: 'Carrois Gothic SC', sans-serif;
-		font-size: 1.4rem;
-		color: black;
+		font-size: 2rem;
+		color: white;
 		text-decoration: none;
 		font-weight: lighter;
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 	}
 `;
 
