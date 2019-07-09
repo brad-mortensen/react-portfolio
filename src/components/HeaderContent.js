@@ -112,11 +112,9 @@ const HeaderContent = () => {
         <p>About</p>
         <div className="introductions">
           <div className="img-container"><img className="me" src={brad} alt='me!' /></div>
-          <p className="intro">Hi! I'm Denver based web developer looking for a frontend or fullstack role with a great company. Check out a sample of my projects below. </p>
+          <p className="intro">Hi! I'm a Denver based web developer looking for a frontend or fullstack role with a great company. Check out a sample of my projects below and head over to my github for all of my projects.  </p>
           <Socials />
-        </div>
-
-        
+        </div>        
       </StyledIntroContainer>
     </>
   )
