@@ -85,12 +85,13 @@ const StyledIntroContainer = styled.div`
       .me {
         width: 100%;        
         height: auto;
+        border-radius: 5px;
       }
     }  
     .intro {
       font-size: 1.5rem;
       text-align: left;
-      max-width: 350px;
+      max-width: 400px;
       font-family: 'Carrois Gothic SC', sans-serif;
     }
   }  
