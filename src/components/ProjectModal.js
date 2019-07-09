@@ -56,7 +56,7 @@ const StyledProjectModal = styled.div`
 
 
 const ProjectModal = ({ setViewProject, project }) => {
-  const { name, description, img, website, cleanWebsite } = project;
+  const { name, description, img, website, cleanWebsite, stack } = project;
   return (
     <StyledProjectModal onClick={() => setViewProject(false)} className="project-container">
       <Fade top>
@@ -73,6 +73,7 @@ const ProjectModal = ({ setViewProject, project }) => {
               {cleanWebsite}
             </a>
             <p>{description}</p>
+            <p>{`Stack: ${stack}`}</p>
           </div>
         </div>
       </Fade>

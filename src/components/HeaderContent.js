@@ -3,7 +3,6 @@ import Slide from 'react-reveal/Slide';
 import styled from 'styled-components';
 import downArrow from './assets/angle-double-down.svg';
 import brad from './assets/brad.jpg';
-import Socials from './Socials';
 
 const StyledHeaderContent = styled.div`
   width: 100%;
@@ -110,11 +109,11 @@ const HeaderContent = () => {
           </br>full-stack web developer.
         </p>
         </Slide>
-        <a href="#projects" className="down-arrow"><img className="arrow-img" src={downArrow} alt="down-arrow" /></a>
+        <a href="#about" className="down-arrow"><img className="arrow-img" src={downArrow} alt="down-arrow" /></a>
 
 
       </StyledHeaderContent>
-      <StyledIntroContainer className="intro-container">
+      <StyledIntroContainer id="about" className="intro-container">
         <p>About</p>
         <div className="introductions">
           <div className="img-container"><img className="me" src={brad} alt='me!' /></div>
