@@ -13,8 +13,9 @@ const StyledSkillGroup = styled.div`
   .skill-header {
     color: black;
     font-family: 'Carrois Gothic SC', sans-serif;
-    font-size: 1rem;
+    font-size: 1.4rem;
     padding-left: 10%;
+    margin-bottom: 5px;
   }
   .skill-imgs {
     width: 100%;

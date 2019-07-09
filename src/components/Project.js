@@ -12,61 +12,37 @@ const StyledProject = styled.div`
     width: 96%;
     margin-bottom: 10px;
   }
-  .no-hover {
+  .project-image {
     width: 100%;
     height: auto;
-    transition: opacity .25s;   
+    transition: opacity .25s;
+    opacity: .6;
+    cursor: pointer;   
+    transition: opacity .25s;
     @media (max-width: 900px) {
       margin-bottom:40px;
-    } 
-  }
-  .hover {
-    width: 100%;
-    height: auto;
-    opacity: .2;
-    transition: opacity .25s;
-    @media (max-width: 900px) { 
-      margin-bottom:40px;
+    }
+    &:hover {
+      opacity: 1;
     }
   }
-  .img-header {
-    position: absolute;
-    bottom: 0px;
-    left: 6px;
-    font-size: 3rem;
-  }  
 `;
 
 const Project = ({ project }) => {
   const { name, img } = project;
-  const [hovering, setHovering] = useState(false);
   const [viewProject, setViewProject] = useState(false)
 
   return (
     <>
       <StyledProject>
-        {hovering ?
-          <>
-            <img
-              className="hover"
-              onMouseEnter={() => setHovering(true)}
-              onMouseLeave={() => setHovering(false)}
-              onClick={() => setViewProject(true)}
-              src={img} alt={name}
-            />
-            <h1 className="img-header">{name}</h1>
-          </> :
-          <img
-            className="no-hover"
-            onMouseEnter={() => setHovering(true)}
-            onMouseLeave={() => setHovering(false)}
-            onClick={() => setViewProject(true)}
-            src={img}
-            alt={name}
-          />
-        }
+        <img
+          className="project-image"
+          onClick={() => setViewProject(true)}
+          src={img}
+          alt={name}
+        />
       </StyledProject>
-      {viewProject ? <ProjectModal project={project} setViewProject={setViewProject} />: null}
+      {viewProject ? <ProjectModal project={project} setViewProject={setViewProject} /> : null}
     </>
 
   )
