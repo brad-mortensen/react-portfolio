@@ -59,30 +59,39 @@ const StyledIntroContainer = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  align-items: center;
   margin-top: 100px;
   width: 100%;
+  height: 400px;
   background-color: #00d1b2;
+  padding: 0 5%;
   padding-bottom: 50px;
+  box-sizing: border-box;
   p{
-    text-align: center;
     width: 100%;
     font-size: 2rem;
     font-family: 'Carrois Gothic SC', sans-serif;
   }
-  .img-container {
-    width: 200px;
-    .me {
-      width: 100%;
-      
-      height: auto;
+  .introductions {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+    .img-container {
+      width: 200px;
+      .me {
+        width: 100%;        
+        height: auto;
+      }
+    }  
+    .intro {
+      font-size: 1.5rem;
+      text-align: left;
+      max-width: 350px;
+      font-family: 'Carrois Gothic SC', sans-serif;
     }
   }  
-  .intro {
-    font-size: 1.5rem;
-    text-align: left;
-    width: 40%;
-    font-family: 'Carrois Gothic SC', sans-serif;
-  }
 `;
 const HeaderContent = () => {
   return (
@@ -98,10 +107,14 @@ const HeaderContent = () => {
 
       </StyledHeaderContent>
       <StyledIntroContainer className="intro-container">
-        <p>About Me:</p>
-        <div className="img-container"><img className="me" src={brad} alt='me!' /></div>
-        <p className="intro">Hi! I'm Denver based web developer looking for a frontend or fullstack role with a great company. Check out a sample of my projects below. </p>
-        <Socials/>
+        <p>About</p>
+        <div className="introductions">
+          <div className="img-container"><img className="me" src={brad} alt='me!' /></div>
+          <p className="intro">Hi! I'm Denver based web developer looking for a frontend or fullstack role with a great company. Check out a sample of my projects below. </p>
+          <Socials />
+        </div>
+
+        
       </StyledIntroContainer>
     </>
   )
