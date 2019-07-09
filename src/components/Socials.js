@@ -9,6 +9,12 @@ const StyledSocials = styled.div`
 	justify-content: center;
 	width: 50%;
 	padding-left: 10%;
+	@media(max-width:700px) {
+		width: 100%;
+		align-items: center;
+		padding: 0;
+		margin-top: 40px;
+	}
 	a {
 		font-family: 'Carrois Gothic SC', sans-serif;
 		font-size: 2rem;
@@ -16,6 +22,9 @@ const StyledSocials = styled.div`
 		text-decoration: none;
 		font-weight: lighter;
 		margin-bottom: 40px;
+		@media(max-width: 350px) {
+			font-size: 1.5rem;
+		}
 	}
 `;
 
