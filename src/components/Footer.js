@@ -33,7 +33,7 @@ const Footer = () => {
 		<StyledFooter id="contact">
 			<p>Get in Touch</p>
 			<ContactForm />
-			<Socials/>
+			<Socials />
 		</StyledFooter>
 	);
 };

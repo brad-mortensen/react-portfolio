@@ -145,7 +145,7 @@ const HeaderContent = () => {
           <div className="img-container"><img className="me" src={brad} alt='me!' /></div>
           <p className="intro">Thanks for visiting my personal website. I'm a (currently) Denver based web developer looking for a frontend or fullstack role with a great company.   </p>
           <p className="intro">Check out a sample of my projects below and head over to my github for all of my project repos. Feel free to reach out at any of my links or contact me at my email below.</p>
-        </div>        
+        </div>
       </StyledIntroContainer>
     </>
   )
