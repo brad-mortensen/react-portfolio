@@ -22,17 +22,19 @@ const Contact = styled.form`
 		}
 	}
 	input {
+		border: none;
 		width: 60%;
 		background-color: white;
 		margin-bottom: 20px;
 		height: 35px;
 		font-family: 'Carrois Gothic SC', sans-serif;
-		font-size: 1rem;
+		font-size: 1.2rem;
 		@media(max-width:700px) {
 			width: 90%;
 		}
 	}
 	textarea {
+		border: none;
 		box-sizing: border-box;
 		width: 60%;
 		height: 100px;
@@ -40,7 +42,7 @@ const Contact = styled.form`
 		padding: 10px;
 		resize: none;
 		font-family: 'Carrois Gothic SC', sans-serif;
-		font-size: 1rem;
+		font-size: 1.2rem;
 		@media(max-width:700px) {
 			width: 90%;
 		}
@@ -50,6 +52,7 @@ const Contact = styled.form`
 		display: flex;
 		justify-content: flex-start;
 		button {
+			cursor: pointer;
 			width: 75%;
 			height: 50px;
 			background-color: white;

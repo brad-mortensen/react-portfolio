@@ -87,9 +87,10 @@ const StyledIntroContainer = styled.div`
     width: 100%;
     height: auto;
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     align-items: center;
     justify-content: space-around;
+    font-family: 'Carrois Gothic SC', sans-serif;
     @media(max-width:810px){
       margin-top: 0;
       flex-flow: row wrap;
@@ -99,7 +100,18 @@ const StyledIntroContainer = styled.div`
       font-size: 1.5rem;
       text-align: left;
       width: 80%;
-      font-family: 'Carrois Gothic SC', sans-serif;
+    }
+    p {
+      width: 100%;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1rem;
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.2rem;
+        text-decoration: underline;
+      }
     }
   }  
 `;
@@ -118,6 +130,7 @@ const HeaderContent = () => {
         <p>About</p>
         <div className="introductions">
           <p className="intro">I'm a (currently) Denver based web developer looking for a frontend or fullstack role with a great company. Check out a sample of my projects below and head over to my github for all of my project repos. Feel free to reach out at any of my links or contact me at my email below.</p>
+          <p >...or go straight to my <a href="https://resume.creddle.io/resume/395lqm7zlki">resume</a></p>
         </div>
       </StyledIntroContainer>
     </>
