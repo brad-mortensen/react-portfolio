@@ -23,6 +23,11 @@ const StyledProject = styled.div`
     margin-bottom: 0;
     &:hover {
       opacity: 1;
+      animation: shadow 0.2s;
+      animation-fill-mode: forwards;
+    }
+    @media(max-width: 835px) {
+      opacity: 1;
     }
   }
   .img-text {
@@ -48,6 +53,11 @@ const StyledProject = styled.div`
       justify-content: center;
       &:hover {
         opacity: 1;
+        animation: shadow 0.2s;
+        animation-fill-mode: forwards;
+      }
+      @media(max-width: 835px) {
+        opacity: 1;
       }
     }
     .code {
@@ -56,6 +66,16 @@ const StyledProject = styled.div`
   }
   @media (max-width: 900px) {
     margin-bottom:40px;
+  }
+  @keyframes shadow {
+    0% {
+      box-shadow: none;
+    }
+    100% {
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.15);
+      transform: translateY(-2px);
+    }
   }
 `;
 
