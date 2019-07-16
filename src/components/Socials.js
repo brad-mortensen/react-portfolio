@@ -9,7 +9,7 @@ const StyledSocials = styled.div`
 	justify-content: center;
 	width: 50%;
 	padding-left: 10%;
-	@media(max-width:700px) {
+	@media(max-width:835px) {
 		width: 100%;
 		align-items: center;
 		padding: 0;

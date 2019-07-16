@@ -8,7 +8,7 @@ const Contact = styled.form`
 	flex-flow: column;
 	align-items: center;
 	font-family: 'Carrois Gothic SC', sans-serif;
-	@media(max-width:700px) {
+	@media(max-width:835px) {
 		width: 100%;
 		align-items: flex-start;
 	}
@@ -17,7 +17,7 @@ const Contact = styled.form`
 		color: white;
 		font-size: 1.2rem;
 		margin-bottom: 15px;
-		@media(max-width:500px) {
+		@media(max-width:835px) {
 			width: 90%;
 		}
 	}
@@ -29,7 +29,7 @@ const Contact = styled.form`
 		height: 35px;
 		font-family: 'Carrois Gothic SC', sans-serif;
 		font-size: 1.2rem;
-		@media(max-width:700px) {
+		@media(max-width:835px) {
 			width: 90%;
 		}
 	}
@@ -43,7 +43,7 @@ const Contact = styled.form`
 		resize: none;
 		font-family: 'Carrois Gothic SC', sans-serif;
 		font-size: 1.2rem;
-		@media(max-width:700px) {
+		@media(max-width:835px) {
 			width: 90%;
 		}
 	}
