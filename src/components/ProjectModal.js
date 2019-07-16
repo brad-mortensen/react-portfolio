@@ -68,9 +68,7 @@ const ProjectModal = ({ setViewProject, project }) => {
               href={website}
               target='_blank'
               rel="noopener noreferrer">
-              <Emoji symbol="🔗" label="link" />
-              <span> </span>
-              {cleanWebsite}
+              {name}
             </a>
             <p>{description}</p>
             <p>{`Stack: ${stack}`}</p>

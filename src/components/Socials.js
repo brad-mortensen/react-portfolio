@@ -34,7 +34,7 @@ const Socials = () => {
 		<StyledSocials className="contact">
 				<a href="https://github.com/brad-mortensen" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square"></i> /brad-mortensen</a>
 				<a href="https://www.linkedin.com/in/bradmmortensen/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> /bradmmortensen</a>
-				<a href="https://twitter.com/bradmmortensen" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter-square"></i> /bradmmortensen</a>
+				<a href="mailto:bradmmortensen@gmail.com?subject=Hey!" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope-square"></i> /bradmmortensen</a>
 		</StyledSocials>
 	);
 };

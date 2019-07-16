@@ -67,7 +67,6 @@ const StyledIntroContainer = styled.div`
   align-items: center;
   margin-top: 100px;
   width: 100%;
-  height: 400px;
   background-color: #00d1b2;
   padding: 0 5%;
   padding-bottom: 50px;
@@ -96,32 +95,11 @@ const StyledIntroContainer = styled.div`
       flex-flow: row wrap;
       justify-content: center;
     }
-    .img-container {
-      width: 200px;
-      @media(max-width: 810px){
-        width: 100px;
-        margin: 0 40%;
-      }
-      .me {
-        width: 100%;        
-        height: auto;
-        border-radius: 5px;
-      }
-    }  
     .intro {
       font-size: 1.5rem;
       text-align: left;
-      width: 400px;
+      width: 80%;
       font-family: 'Carrois Gothic SC', sans-serif;
-      @media(max-width:1200px){
-        width: 300px;
-      }
-      @media(max-width:950px){
-        width: 250px;
-      }
-      @media(max-width:810px){
-        margin-right: 30px;
-      }
     }
   }  
 `;
@@ -135,14 +113,11 @@ const HeaderContent = () => {
         </p>
         </Slide>
         <a href="#about" className="down-arrow"><img className="arrow-img" src={downArrow} alt="down-arrow" /></a>
-
-
       </StyledHeaderContent>
       <StyledIntroContainer id="about" className="intro-container">
         <p>About</p>
         <div className="introductions">
-          <p className="intro">Thanks for visiting my personal website. I'm a (currently) Denver based web developer looking for a frontend or fullstack role with a great company.   </p>
-          <p className="intro">Check out a sample of my projects below and head over to my github for all of my project repos. Feel free to reach out at any of my links or contact me at my email below.</p>
+          <p className="intro">I'm a (currently) Denver based web developer looking for a frontend or fullstack role with a great company. Check out a sample of my projects below and head over to my github for all of my project repos. Feel free to reach out at any of my links or contact me at my email below.</p>
         </div>
       </StyledIntroContainer>
     </>

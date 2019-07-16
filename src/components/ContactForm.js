@@ -11,7 +11,6 @@ const Contact = styled.form`
 	@media(max-width:700px) {
 		width: 100%;
 		align-items: flex-start;
-
 	}
 	label{
 		width: 60%;
