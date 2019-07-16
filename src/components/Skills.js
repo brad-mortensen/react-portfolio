@@ -11,6 +11,9 @@ import angular from './assets/angular.svg';
 import c from './assets/c.svg';
 import django from './assets/django.svg';
 import git from './assets/git.svg';
+import html5 from './assets/html5.svg';
+import bootstrap4 from './assets/bootstrap4.svg';
+import css3 from './assets/css3.svg';
 
 
 import styled from 'styled-components';
@@ -103,7 +106,7 @@ const Skills = () => {
         }
       ],
       id: 2
-    },
+    },    
     {
       groupName: "tools",
       assets: [
@@ -124,6 +127,27 @@ const Skills = () => {
         }
       ],
       id: 3
+    },
+    {
+      groupName: "ui/ux",
+      assets: [
+        {
+          name: 'html5',
+          img: html5,
+          id: 0
+        },
+        {
+          name: 'css3',
+          img: css3,
+          id: 1
+        },
+        {
+          name: 'bootstrap4',
+          img: bootstrap4,
+          id: 2
+        }
+      ],
+      id: 4
     },
   ]
   return (
