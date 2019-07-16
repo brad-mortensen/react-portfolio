@@ -60,7 +60,7 @@ const StyledProject = styled.div`
 `;
 
 const Project = ({ project }) => {
-  const { name, img, website } = project;
+  const { name, img, website, repo } = project;
   const [viewProject, setViewProject] = useState(false)
 
   return (
@@ -73,17 +73,17 @@ const Project = ({ project }) => {
           alt={name}
         />
         <div className="img-text">
-          <a  
+          <a
             className="links code"
-            href={website} 
-            target='_blank' 
+            href={repo}
+            target='_blank'
             rel="noopener noreferrer">
             Code
           </a>
-          <a 
-            href={website} 
-            target='_blank' 
-            rel="noopener noreferrer" 
+          <a
+            href={website}
+            target='_blank'
+            rel="noopener noreferrer"
             className="links website">
             Site
           </a>
