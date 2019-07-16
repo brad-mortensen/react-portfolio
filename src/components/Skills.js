@@ -6,8 +6,8 @@ import postgresql from './assets/postgresql.svg';
 import vue from './assets/vue-9.svg';
 import react from './assets/react.svg';
 import python from './assets/python-5.svg';
-import yarn from './assets/yarn.svg';
-import sqlite from './assets/sqlite.svg';
+import visualStudioCode from './assets/visual-studio-code.svg';
+import angular from './assets/angular.svg';
 import c from './assets/c.svg';
 import django from './assets/django.svg';
 import git from './assets/git.svg';
@@ -33,6 +33,9 @@ const StyledSkills = styled.div`
     font-family: 'Carrois Gothic SC', sans-serif;
     font-size: 2rem;
     color: black;
+    .brackets {
+      font-size: 1rem;
+    }
   }
 `;
 
@@ -73,8 +76,8 @@ const Skills = () => {
           id: 1
         },
         {
-          name: 'django',
-          img: django,
+          name: 'angular',
+          img: angular,
           id: 2
         }
       ],
@@ -94,8 +97,8 @@ const Skills = () => {
           id: 1
         },
         {
-          name: 'sqlite',
-          img: sqlite,
+          name: 'django',
+          img: django,
           id: 2
         }
       ],
@@ -110,13 +113,13 @@ const Skills = () => {
           id: 0
         },
         {
-          name: 'npm',
-          img: npm,
+          name: 'vscode',
+          img: visualStudioCode,
           id: 1
         },
         {
-          name: 'yarn',
-          img: yarn,
+          name: 'npm',
+          img: npm,
           id: 2
         }
       ],
@@ -125,7 +128,7 @@ const Skills = () => {
   ]
   return (
     <StyledSkills id="skills">
-      <p>Some tech I enjoy</p>
+      <p>Some tech I use <span className="brackets">[full list in resume]</span></p>
       {skillData.map(skill =>
         <SkillGroup skill={skill} key={skill.id} />
       )}

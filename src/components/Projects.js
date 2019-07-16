@@ -32,6 +32,9 @@ const StyledProjects = styled.div`
     font-weight: lighter;
     color: white;
     margin-bottom: 30px;
+    .brackets {
+      font-size: 1rem;
+    }
   }
 `;
 
@@ -80,7 +83,7 @@ const Projects = () => {
   ]
   return (
     <StyledProjects id="projects">
-      <h1 className="Projects">Projects</h1>
+      <h1 className="Projects">Projects <span className="brackets">[click image for more details]</span></h1>
       {projectData.map((project) =>
         <Project project={project} key={project.id} />
       )}
