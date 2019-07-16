@@ -73,8 +73,20 @@ const Project = ({ project }) => {
           alt={name}
         />
         <div className="img-text">
-          <a  className="links code">Code</a>
-          <a href={website} className="links website">Site</a>
+          <a  
+            className="links code"
+            href={website} 
+            target='_blank' 
+            rel="noopener noreferrer">
+            Code
+          </a>
+          <a 
+            href={website} 
+            target='_blank' 
+            rel="noopener noreferrer" 
+            className="links website">
+            Site
+          </a>
         </div>
       </StyledProject>
       {viewProject ? <ProjectModal project={project} setViewProject={setViewProject} /> : null}
