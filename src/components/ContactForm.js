@@ -98,9 +98,6 @@ const ContactForm = () => {
 		setEmail('');
 		setMessage('');
 	}
-
-	console.log('render');
-
 	return (
 		<Contact onSubmit={(e) => formSubmit(e)}>
 			<label className="message-name" htmlFor="message-name"> Name</label>
