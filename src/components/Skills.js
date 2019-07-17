@@ -38,6 +38,7 @@ const StyledSkills = styled.div`
     color: black;
     .brackets {
       font-size: 1rem;
+      color: black;
     }
   }
 `;
@@ -152,7 +153,7 @@ const Skills = () => {
   ]
   return (
     <StyledSkills id="skills">
-      <p>Some tech I use <span className="brackets">[full list in resume]</span></p>
+      <p>Tech I use <span className="brackets">{"{ full list in resume }"}</span></p>
       {skillData.map(skill =>
         <SkillGroup skill={skill} key={skill.id} />
       )}

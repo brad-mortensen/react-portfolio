@@ -129,8 +129,8 @@ const HeaderContent = () => {
       <StyledIntroContainer id="about" className="intro-container">
         <p>About</p>
         <div className="introductions">
-          <p className="intro">I'm a (currently) Denver based web developer looking for a frontend or fullstack role with a great company. Check out a sample of my projects below and head over to my github for all of my project repos. Feel free to reach out at any of my links or contact me at my email below.</p>
-          <p >...or go straight to my <a href="https://resume.creddle.io/resume/395lqm7zlki">resume</a></p>
+          <p className="intro">{"I'm a {currently} Denver based web developer looking for a frontend or fullstack role with a great company. Check out a sample of my projects below and head over to my github for all of my project repos. Feel free to reach out at any of my links or contact me at my email below."}</p>
+          <p >{"{ ...or go straight to my "}<a href="https://resume.creddle.io/resume/395lqm7zlki">{"resume"}</a>{" }"}</p>
         </div>
       </StyledIntroContainer>
     </>
