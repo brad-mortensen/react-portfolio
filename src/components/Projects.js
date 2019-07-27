@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import {projectData} from './assets/data'
+import { projectData } from './assets/data'
 
 import Project from './Project';
 
@@ -22,7 +22,7 @@ const StyledProjects = styled.div`
     flex-flow: column;
     align-items: center;
   }
-  h1 {
+  .projects-header {
     width: 100%;
     font-family: 'Carrois Gothic SC', sans-serif;
     font-size: 2rem;
@@ -39,7 +39,7 @@ const Projects = () => {
 
   return (
     <StyledProjects id="projects">
-      <h1 className="Projects">Projects <span className="brackets">{"{ click image for more details }"}</span></h1>
+      <h1 className="projects-header">Projects <span className="brackets">{"{ click image for more details }"}</span></h1>
       {projectData.map((project) =>
         <Project project={project} key={project.id} />
       )}
