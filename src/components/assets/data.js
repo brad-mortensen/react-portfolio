@@ -19,7 +19,7 @@ export const projectData = [
     description: "Bonafind is a web application that helps you discover restaurants and businesses near you. You could call it a minimum viable Yelp. This project was built over 5 weeks by a team of  four developers. Nearly everything I know about working on a software team, I learned during this project.",
     stack: "React, Express, Node, PostgreSQL",
     img: bonafind,
-    repo: "https://github.com/Lambda-School-Labs/labs9-business-reviews",  
+    repo: "https://github.com/Lambda-School-Labs/labs9-business-reviews",
     website: 'https://bonafind.netlify.com/',
     cleanWebsite: 'bonafind.biz/',
     id: 1
@@ -43,5 +43,113 @@ export const projectData = [
     website: 'http://django-bloggo.herokuapp.com/',
     cleanWebsite: 'django-bloggo.herokuapp.com/',
     id: 3
+  },
+]
+
+export const skillData = [
+  {
+    groupName: "languages",
+    assets: [
+      {
+        name: 'javascript',
+        img: javascript,
+        id: 0
+      },
+      {
+        name: 'python',
+        img: python,
+        id: 1
+      },
+      {
+        name: 'c',
+        img: c,
+        id: 2
+      }
+    ],
+    id: 0
+  },
+  {
+    groupName: "frontend",
+    assets: [
+      {
+        name: 'react',
+        img: react,
+        id: 0
+      },
+      {
+        name: 'vue',
+        img: vue,
+        id: 1
+      },
+      {
+        name: 'angular',
+        img: angular,
+        id: 2
+      }
+    ],
+    id: 1
+  },
+  {
+    groupName: "backend",
+    assets: [
+      {
+        name: 'nodejs',
+        img: nodejs,
+        id: 0
+      },
+      {
+        name: 'postgresql',
+        img: postgresql,
+        id: 1
+      },
+      {
+        name: 'django',
+        img: django,
+        id: 2
+      }
+    ],
+    id: 2
+  },
+  {
+    groupName: "tools",
+    assets: [
+      {
+        name: 'git',
+        img: git,
+        id: 0
+      },
+      {
+        name: 'vscode',
+        img: visualStudioCode,
+        id: 1
+      },
+      {
+        name: 'npm',
+        img: npm,
+        id: 2
+      }
+    ],
+    id: 3
+  },
+  {
+    groupName: "ui/ux",
+    assets: [
+      {
+        name: 'html5',
+        img: html5,
+        id: 0
+      },
+      {
+        name: 'css3',
+        img: css3,
+        id: 1
+      },
+      {
+        name: 'bootstrap4',
+        img: bootstrap4,
+        id: 2
+      }
+    ],
+    id: 4
   },
 ]
