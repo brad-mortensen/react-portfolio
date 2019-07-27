@@ -1,23 +1,8 @@
 import React from 'react';
-import javascript from './assets/javascript.svg';
-import nodejs from './assets/nodejs-1.svg';
-import npm from './assets/npm.svg';
-import postgresql from './assets/postgresql.svg';
-import vue from './assets/vue-9.svg';
-import react from './assets/react.svg';
-import python from './assets/python-5.svg';
-import visualStudioCode from './assets/visual-studio-code.svg';
-import angular from './assets/angular.svg';
-import c from './assets/c.svg';
-import django from './assets/django.svg';
-import git from './assets/git.svg';
-import html5 from './assets/html5.svg';
-import bootstrap4 from './assets/bootstrap4.svg';
-import css3 from './assets/css3.svg';
-
-
 import styled from 'styled-components';
+
 import SkillGroup from './SkillGroup';
+import {skillData} from './assets/data'
 
 
 

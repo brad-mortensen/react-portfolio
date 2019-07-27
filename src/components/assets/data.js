@@ -2,6 +2,22 @@ import bonafind from './bonafind.png';
 import vueNotes from './vue-notes.png';
 import djangoBlog from './django-blog.png';
 import pairMe from './pair-me.png';
+import javascript from './javascript.svg';
+import nodejs from './nodejs-1.svg';
+import npm from './npm.svg';
+import postgresql from './postgresql.svg';
+import vue from './vue-9.svg';
+import react from './react.svg';
+import python from './python-5.svg';
+import visualStudioCode from './visual-studio-code.svg';
+import angular from './angular.svg';
+import c from './c.svg';
+import django from './django.svg';
+import git from './git.svg';
+import html5 from './html5.svg';
+import bootstrap4 from './bootstrap4.svg';
+import css3 from './css3.svg';
+
 
 export const projectData = [
   {
