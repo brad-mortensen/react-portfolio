@@ -1,4 +1,9 @@
-const projectData = [
+import bonafind from './bonafind.png';
+import vueNotes from './vue-notes.png';
+import djangoBlog from './django-blog.png';
+import pairMe from './pair-me.png';
+
+export const projectData = [
   {
     name: "PairMe",
     description: "PairMe was built during a three day hackathon and is one of my favorite projects I've ever built. I accumulated around 30 hours of work on this project over just the first two days of the hackathon. With the project, we tried to find a way to make it easier for people who wanted to pair program but had trouble finding a partner. ",

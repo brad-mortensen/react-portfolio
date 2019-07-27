@@ -1,10 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import bonafind from './assets/bonafind.png';
-import vueNotes from './assets/vue-notes.png';
-import djangoBlog from './assets/django-blog.png';
-import pairMe from './assets/pair-me.png';
+import {projectData} from './assets/data'
 
 import Project from './Project';
 
