@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import SkillGroup from './SkillGroup';
-import {skillData} from './assets/data'
+import { skillData } from './assets/data'
 
 
 
@@ -16,7 +16,7 @@ const StyledSkills = styled.div`
   flex-flow: row wrap;
   padding: 0 5% 30px 5%;
   background-color: #00d1b2;
-  p {
+  .skillheader {
     width: 100%;
     font-family: 'Carrois Gothic SC', sans-serif;
     font-size: 2rem;
@@ -32,7 +32,7 @@ const Skills = () => {
 
   return (
     <StyledSkills id="skills">
-      <p>Tech I use <span className="brackets">{"{ full list in resume }"}</span></p>
+      <p className="skill-header">Tech I use <span className="brackets">{"{ full list in resume }"}</span></p>
       {skillData.map(skill =>
         <SkillGroup skill={skill} key={skill.id} />
       )}
