@@ -16,7 +16,7 @@ const StyledSkills = styled.div`
   flex-flow: row wrap;
   padding: 0 5% 30px 5%;
   background-color: #00d1b2;
-  .skillheader {
+  .skill-header {
     width: 100%;
     font-family: 'Carrois Gothic SC', sans-serif;
     font-size: 2rem;
