@@ -63,13 +63,14 @@ const ProjectModal = ({ setViewProject, project }) => {
           <div className="text-container">
             {/* <h3>{name}</h3> */}
             <a
+            className="website"
               href={website}
               target='_blank'
               rel="noopener noreferrer">
               {name}
             </a>
-            <p>{description}</p>
-            <p>{`Stack: ${stack}`}</p>
+            <p className="project-description">{description}</p>
+            <p className="project-stack>{`Stack: ${stack}`}</p>
           </div>
         </div>
       </Fade>
