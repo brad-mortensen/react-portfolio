@@ -29,14 +29,14 @@ const StyledSkillGroup = styled.div`
   }
 `;
 
-const SkillGroup = ({skill}) => {
-  const {groupName, assets} = skill;
+const SkillGroup = ({ skill }) => {
+  const { groupName, assets } = skill;
   return (
     <StyledSkillGroup>
       <p className="skill-header">{groupName}</p>
       <div className="skill-imgs">
-        {assets.map(asset=>
-          <img src={asset.img} alt={asset.name}/>
+        {assets.map(asset =>
+          <img className="tech-image" src={asset.img} alt={asset.name} />
         )}
       </div>
     </StyledSkillGroup>
