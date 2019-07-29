@@ -70,7 +70,7 @@ const ProjectModal = ({ setViewProject, project }) => {
               {name}
             </a>
             <p className="project-description">{description}</p>
-            <p className="project-stack>{`Stack: ${stack}`}</p>
+            <p className="project-stack">{`Stack: ${stack}`}</p>
           </div>
         </div>
       </Fade>
