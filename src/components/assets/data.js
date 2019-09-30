@@ -7,7 +7,7 @@ import npm from './npm.svg';
 import vue from './vue-9.svg';
 import react from './react.svg';
 import python from './python-5.svg';
-import visualStudioCode from './visual-studio-code.svg';
+import vscode from './visual-studio-code.svg';
 import angular from './angular.svg';
 import c from './c.svg';
 import django from './django.svg';
@@ -136,7 +136,7 @@ export const skillData = [
       },
       {
         name: 'vscode',
-        img: visualStudioCode,
+        img: vscode,
         id: 1
       },
       {
