@@ -4,7 +4,6 @@ import pairMe from './pair-me.png';
 import javascript from './javascript.svg';
 import nodejs from './nodejs-1.svg';
 import npm from './npm.svg';
-import postgresql from './postgresql.svg';
 import vue from './vue-9.svg';
 import react from './react.svg';
 import python from './python-5.svg';

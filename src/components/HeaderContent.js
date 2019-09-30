@@ -138,7 +138,7 @@ const HeaderContent = () => {
               href="https://resume.creddle.io/resume/395lqm7zlki"
               target="_blank"
               rel="noopener noreferrer">
-              {"resume"}
+              resume
             </a>
             {" }"}
           </p>
