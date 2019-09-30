@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 
 import { projectData } from './assets/data'
@@ -36,12 +36,18 @@ const StyledProjects = styled.div`
 `;
 
 const Projects = () => {
+  const [isMobile, setIsMobile] = useState(false)
 
+  useEffect(() => {
+    if ((typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1)) {
+      setIsMobile(true)
+    }
+  }, [])
   return (
     <StyledProjects id="projects">
       <h1 className="projects-header">Projects <span className="brackets">{"{ click image for more details }"}</span></h1>
       {projectData.map((project) =>
-        <Project project={project} key={project.id} />
+        <Project project={project} key={project.id} isMobile={isMobile}/>
       )}
     </StyledProjects>
   )
