@@ -22,7 +22,7 @@ import nightlyfe from './nightlyfe.png';
 export const projectData = [
   {
     name: "NightLyfe",
-    description: "NightLyfe ",
+    description: "NightLyfe is a Yelp style app built as a group Co-Op project with Weedmaps engineers as stakeholders. The project was to be build in four week by a group of four developers with myself serving as the team lead. It was a great experience to see how real engineering teams work and to receive advice directly from working engineers.",
     img: nightlyfe,
     repo: "https://github.com/Labs-Weedmaps-Team-2",
     stack: "React, Express, Node, Socket.IO",
@@ -47,7 +47,7 @@ export const projectData = [
     img: bonafind,
     repo: "https://github.com/Lambda-School-Labs/labs9-business-reviews",
     website: 'https://bonafind.netlify.com/',
-    cleanWebsite: 'bonafind.biz/',
+    cleanWebsite: 'bonafind.biz',
     id: 2
   },
   {
