@@ -82,13 +82,19 @@ const StyledProject = styled.div`
 const Project = ({ project }) => {
   const { name, img, website, repo } = project;
   const [viewProject, setViewProject] = useState(false)
-
+  const isMobileDevice = () => {
+    if ((typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1)) {
+      return
+    } else {
+      setViewProject(true)
+    }
+  };
   return (
     <>
       <StyledProject>
         <img
           className="project-image"
-          onClick={() => setViewProject(true)}
+          onClick={isMobileDevice}
           src={img}
           alt={name}
         />
