@@ -1,5 +1,4 @@
 import bonafind from './bonafind.png';
-import vueNotes from './vue-notes.png';
 import djangoBlog from './django-blog.png';
 import pairMe from './pair-me.png';
 import javascript from './javascript.svg';
@@ -17,9 +16,21 @@ import git from './git.svg';
 import html5 from './html5.svg';
 import bootstrap4 from './bootstrap4.svg';
 import css3 from './css3.svg';
+import rails from './rails.svg';
+import nightlyfe from './nightlyfe.png';
 
 
 export const projectData = [
+  {
+    name: "NightLyfe",
+    description: "NightLyfe ",
+    img: nightlyfe,
+    repo: "https://github.com/Labs-Weedmaps-Team-2",
+    stack: "React, Express, Node, Socket.IO",
+    website: 'https://night-lyfe.netlify.com/',
+    cleanWebsite: 'night-lyfe.netlify.com',
+    id: 0
+  },
   {
     name: "PairMe",
     description: "PairMe was built during a three day hackathon and is one of my favorite projects I've ever built. I accumulated around 30 hours of work on this project over just the first two days of the hackathon. With the project, we tried to find a way to make it easier for people who wanted to pair program but had trouble finding a partner. ",
@@ -28,7 +39,7 @@ export const projectData = [
     stack: "React, Express, Node, Socket.IO",
     website: 'https://pair-me.netlify.com/',
     cleanWebsite: 'pair-me.netlify.com',
-    id: 0
+    id: 1
   },
   {
     name: "Bonafind",
@@ -38,16 +49,6 @@ export const projectData = [
     repo: "https://github.com/Lambda-School-Labs/labs9-business-reviews",
     website: 'https://bonafind.netlify.com/',
     cleanWebsite: 'bonafind.biz/',
-    id: 1
-  },
-  {
-    name: "Vue Notes",
-    description: "The web dev mainstay that we all know and love, the ole' note taking app. I was interested in learning vue after many React Projects. This was my first Vue project but still remains a favorite to this day.",
-    stack: "Vue, Express, Node, PostgreSQL",
-    img: vueNotes,
-    repo: "https://github.com/brad-mortensen/Notes-Vue",
-    website: 'https://notes-vue.herokuapp.com/',
-    cleanWebsite: 'notes-vue.herokuapp.com/',
     id: 2
   },
   {
@@ -114,8 +115,8 @@ export const skillData = [
         id: 0
       },
       {
-        name: 'postgresql',
-        img: postgresql,
+        name: 'rails',
+        img: rails,
         id: 1
       },
       {
