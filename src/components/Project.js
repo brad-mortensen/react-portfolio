@@ -30,7 +30,7 @@ const StyledProject = styled.div`
       opacity: 1;
     }
   }
-  .img-text {
+  .links-text {
     margin-top: 0;
     width: 100%;
     height: 35px;
@@ -92,7 +92,7 @@ const Project = ({ project, isMobile }) => {
           src={img}
           alt={name}
         />
-        <div className="img-text">
+        <div className="links-text">
           <a
             className="links code"
             href={repo}
