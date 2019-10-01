@@ -45,7 +45,8 @@ const Projects = () => {
   }, [])
   return (
     <StyledProjects id="projects">
-      <h1 className="projects-header">Projects
+      <h1 className="projects-header">
+        Projects
         {!isMobile &&
           <span className="brackets">
             {" { click image for more details }"}
@@ -53,7 +54,11 @@ const Projects = () => {
         }
       </h1>
       {projectData.map((project) =>
-        <Project project={project} key={project.id} isMobile={isMobile} />
+        <Project
+          project={project}
+          key={project.id}
+          isMobile={isMobile}
+        />
       )}
     </StyledProjects>
   )

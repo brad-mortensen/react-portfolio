@@ -43,7 +43,7 @@ const StyledProject = styled.div`
       font-size: 1.5rem;
     }
     p {
-      font-size: .8rem;
+      font-size: 1rem;
     }
   }
   .links-text {
