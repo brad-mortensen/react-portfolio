@@ -10,12 +10,16 @@ const StyledSkillGroup = styled.div`
   background-color: white;
   padding-bottom: 10px;
   border-radius: 5px;
+  @media (max-width: 500px) {
+    width: 96%;
+  }
   .skill-header {
+    width: 100%;
     color: black;
     font-family: 'Carrois Gothic SC', sans-serif;
     font-size: 1.4rem;
     padding-left: 10%;
-    margin-bottom: 5px;
+    margin: 5px 0;
   }
   .skill-imgs {
     width: 100%;
