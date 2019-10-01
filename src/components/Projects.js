@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 import { projectData } from './assets/data'
@@ -45,9 +45,15 @@ const Projects = () => {
   }, [])
   return (
     <StyledProjects id="projects">
-      <h1 className="projects-header">Projects <span className="brackets">{"{ click image for more details }"}</span></h1>
+      <h1 className="projects-header">Projects
+        {!isMobile &&
+          <span className="brackets">
+            {" { click image for more details }"}
+          </span>
+        }
+      </h1>
       {projectData.map((project) =>
-        <Project project={project} key={project.id} isMobile={isMobile}/>
+        <Project project={project} key={project.id} isMobile={isMobile} />
       )}
     </StyledProjects>
   )
