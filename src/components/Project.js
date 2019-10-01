@@ -30,6 +30,22 @@ const StyledProject = styled.div`
       opacity: 1;
     }
   }
+  .project-details {
+    width: 100%;
+    height: auto;
+    background: white;
+    margin: 7px 0;
+    padding: 5px;
+    box-sizing: border-box;
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: .8rem;
+    }
+  }
   .links-text {
     margin-top: 0;
     width: 100%;
@@ -80,7 +96,7 @@ const StyledProject = styled.div`
 `;
 
 const Project = ({ project, isMobile }) => {
-  const { name, img, website, repo } = project;
+  const { name, img, website, repo, description, stack } = project;
   const [viewProject, setViewProject] = useState(false)
 
   return (
@@ -92,6 +108,19 @@ const Project = ({ project, isMobile }) => {
           src={img}
           alt={name}
         />
+        {isMobile &&
+          <div className="project-details">
+            <a
+              className="website"
+              href={website}
+              target='_blank'
+              rel="noopener noreferrer">
+              {name}
+            </a>
+            <p className="description">{description}</p>
+            <p className="stack">{`Stack: ${stack}`}</p>
+          </div>
+        }
         <div className="links-text">
           <a
             className="links code"
