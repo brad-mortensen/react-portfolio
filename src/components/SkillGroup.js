@@ -39,8 +39,8 @@ const SkillGroup = ({ skill }) => {
     <StyledSkillGroup>
       <p className="skill-header">{groupName}</p>
       <div className="skill-imgs">
-        {assets.map(asset =>
-          <img className="tech-image" key={asset.name} src={asset.img} alt={asset.name} />
+        {assets.map(({name, img, id}) =>
+          <img className="tech-image" key={id} src={img} alt={name} />
         )}
       </div>
     </StyledSkillGroup>
