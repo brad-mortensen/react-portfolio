@@ -97,7 +97,7 @@ const StyledProject = styled.div`
 
 const Project = ({ project, isMobile }) => {
   const { name, img, website, repo, description, stack } = project;
-  const [viewProject, setViewProject] = useState(false)
+  const [viewProject, setViewProject] = useState(false);
 
   return (
     <>
