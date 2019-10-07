@@ -11,7 +11,7 @@ const NavBar = () => {
         <a href="#skills" className="skills">Skills</a>
         <a href="#contact" className="contact">Contact</a>
       </div>
-      <h1 className="main-header">{name}</h1>
+      <h1 className="name">{name}</h1>
     </StyledNav>
   )
 }
@@ -32,7 +32,7 @@ margin-top: 10px;
   @media(max-width: 700px){
     flex-flow:column-reverse;
   }
-  .main-header {   
+  .name {   
     font-size: 1rem;
     text-transform: uppercase;
     font-family: 'Carrois Gothic SC', sans-serif;
