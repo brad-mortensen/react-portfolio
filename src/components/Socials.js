@@ -1,6 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 
+
+const Socials = () => {
+
+	return (
+		<StyledSocials className="contact">
+			<a href="https://github.com/brad-mortensen" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square"></i> /brad-mortensen</a>
+			<a href="https://www.linkedin.com/in/bradmmortensen/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i> /bradmmortensen</a>
+			<a href="mailto:bradmmortensen@gmail.com?subject=Hey!" target="_blank" rel="noopener noreferrer"><i className="fas fa-envelope-square"></i> /bradmmortensen</a>
+		</StyledSocials>
+	);
+};
+
+export default Socials;
+
+
 const StyledSocials = styled.div`
 	box-sizing: border-box;
 	display: flex;
@@ -27,16 +42,3 @@ const StyledSocials = styled.div`
 		}
 	}
 `;
-
-const Socials = () => {
-
-	return (
-		<StyledSocials className="contact">
-			<a href="https://github.com/brad-mortensen" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square"></i> /brad-mortensen</a>
-			<a href="https://www.linkedin.com/in/bradmmortensen/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i> /bradmmortensen</a>
-			<a href="mailto:bradmmortensen@gmail.com?subject=Hey!" target="_blank" rel="noopener noreferrer"><i className="fas fa-envelope-square"></i> /bradmmortensen</a>
-		</StyledSocials>
-	);
-};
-
-export default Socials;

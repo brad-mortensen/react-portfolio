@@ -37,6 +37,7 @@ const Projects = () => {
 
 export default Projects;
 
+
 const StyledProjects = styled.div`
   box-sizing: border-box;
   width: 100%;

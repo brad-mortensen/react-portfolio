@@ -6,12 +6,6 @@ import Footer from './components/Footer';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 
-const Container = styled.div`
-	box-sizing: border-box;
-	/* width: 1200px;
-	margin: 0 auto; */
-`;
-
 
 const App = () => {
 
@@ -26,3 +20,10 @@ const App = () => {
 }
 
 export default App;
+
+
+const Container = styled.div`
+	box-sizing: border-box;
+	/* width: 1200px;
+	margin: 0 auto; */
+`;

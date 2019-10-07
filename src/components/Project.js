@@ -3,6 +3,60 @@ import styled from 'styled-components';
 
 import ProjectModal from './ProjectModal';
 
+
+const Project = ({ project, isMobile }) => {
+  const { name, img, website, repo, description, stack } = project;
+  const [viewProject, setViewProject] = useState(false);
+
+  return (
+    <>
+      <StyledProject>
+        <img
+          className="project-image"
+          onClick={!isMobile ? () => { setViewProject(true) } : null}
+          src={img}
+          alt={name}
+        />
+        {/* Displays information about projects without modal */}
+        {isMobile &&
+          <div className="project-details">
+            <a
+              className="website"
+              href={website}
+              target='_blank'
+              rel="noopener noreferrer">
+              {name}
+            </a>
+            <p className="description">{description}</p>
+            <p className="stack">{`Stack: ${stack}`}</p>
+          </div>
+        }
+        <div className="links-text">
+          <a
+            className="links code"
+            href={repo}
+            target='_blank'
+            rel="noopener noreferrer">
+            Code
+          </a>
+          <a
+            href={website}
+            target='_blank'
+            rel="noopener noreferrer"
+            className="links website">
+            Site
+          </a>
+        </div>
+      </StyledProject>
+      {/* Popup modal to display project info when not on mobile */}
+      {viewProject ? <ProjectModal project={project} setViewProject={setViewProject} /> : null}
+    </>
+  )
+}
+
+export default Project;
+
+
 const StyledProject = styled.div`
   width: 47%;
   box-sizing: border-box;
@@ -94,55 +148,3 @@ const StyledProject = styled.div`
     }
   }
 `;
-
-const Project = ({ project, isMobile }) => {
-  const { name, img, website, repo, description, stack } = project;
-  const [viewProject, setViewProject] = useState(false);
-
-  return (
-    <>
-      <StyledProject>
-        <img
-          className="project-image"
-          onClick={!isMobile ? () => { setViewProject(true) } : null}
-          src={img}
-          alt={name}
-        />
-        {/* Displays information about projects without modal */}
-        {isMobile &&
-          <div className="project-details">
-            <a
-              className="website"
-              href={website}
-              target='_blank'
-              rel="noopener noreferrer">
-              {name}
-            </a>
-            <p className="description">{description}</p>
-            <p className="stack">{`Stack: ${stack}`}</p>
-          </div>
-        }
-        <div className="links-text">
-          <a
-            className="links code"
-            href={repo}
-            target='_blank'
-            rel="noopener noreferrer">
-            Code
-          </a>
-          <a
-            href={website}
-            target='_blank'
-            rel="noopener noreferrer"
-            className="links website">
-            Site
-          </a>
-        </div>
-      </StyledProject>
-      {/* Popup modal to display project info when not on mobile */}
-      {viewProject ? <ProjectModal project={project} setViewProject={setViewProject} /> : null}
-    </>
-  )
-}
-
-export default Project;

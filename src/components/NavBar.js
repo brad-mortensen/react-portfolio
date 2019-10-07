@@ -1,6 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
 
+
+const NavBar = () => {
+  const name = '{brad mortensen}';
+  return (
+    <StyledNav>
+      <div className="nav-links">
+        <a href="#projects" className="projects">Projects</a>
+        <a href="#skills" className="skills">Skills</a>
+        <a href="#contact" className="contact">Contact</a>
+      </div>
+      <h1 className="main-header">{name}</h1>
+    </StyledNav>
+  )
+}
+
+export default NavBar
+
+
 const StyledNav = styled.div`
 margin-top: 10px;
   width: 100%;
@@ -47,19 +65,3 @@ margin-top: 10px;
     }
   }
 `;
-
-const NavBar = () => {
-  const name = '{brad mortensen}';
-  return (
-    <StyledNav>
-      <div className="nav-links">
-        <a href="#projects" className="projects">Projects</a>
-        <a href="#skills" className="skills">Skills</a>
-        <a href="#contact" className="contact">Contact</a>
-      </div>
-      <h1 className="main-header">{name}</h1>
-    </StyledNav>
-  )
-}
-
-export default NavBar

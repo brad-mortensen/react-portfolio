@@ -2,6 +2,35 @@ import React from 'react';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
 
+
+const ProjectModal = ({ setViewProject, project }) => {
+  const { name, description, img, website, stack } = project;
+  return (
+    <StyledProjectModal onClick={() => setViewProject(false)} className="project-container">
+      <Fade top>
+        <div className="project-modal">
+          <img src={img} alt={name} />
+          <div className="text-container">
+            {/* <h3>{name}</h3> */}
+            <a
+            className="website"
+              href={website}
+              target='_blank'
+              rel="noopener noreferrer">
+              {name}
+            </a>
+            <p className="project-description">{description}</p>
+            <p className="project-stack">{`Stack: ${stack}`}</p>
+          </div>
+        </div>
+      </Fade>
+    </StyledProjectModal>
+  )
+}
+
+export default ProjectModal;
+
+
 const StyledProjectModal = styled.div`
   position: fixed;
   top: 0;
@@ -50,32 +79,3 @@ const StyledProjectModal = styled.div`
     
   }
 `;
-
-
-
-const ProjectModal = ({ setViewProject, project }) => {
-  const { name, description, img, website, stack } = project;
-  return (
-    <StyledProjectModal onClick={() => setViewProject(false)} className="project-container">
-      <Fade top>
-        <div className="project-modal">
-          <img src={img} alt={name} />
-          <div className="text-container">
-            {/* <h3>{name}</h3> */}
-            <a
-            className="website"
-              href={website}
-              target='_blank'
-              rel="noopener noreferrer">
-              {name}
-            </a>
-            <p className="project-description">{description}</p>
-            <p className="project-stack">{`Stack: ${stack}`}</p>
-          </div>
-        </div>
-      </Fade>
-    </StyledProjectModal>
-  )
-}
-
-export default ProjectModal;

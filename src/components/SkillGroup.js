@@ -1,6 +1,24 @@
 import React from 'react'
 import styled from 'styled-components'
 
+
+const SkillGroup = ({ skill }) => {
+  const { groupName, assets } = skill;
+  return (
+    <StyledSkillGroup>
+      <p className="skill-header">{groupName}</p>
+      <div className="skill-imgs">
+        {assets.map(({name, img, id}) =>
+          <img className="tech-image" key={id} src={img} alt={name} />
+        )}
+      </div>
+    </StyledSkillGroup>
+  )
+}
+
+export default SkillGroup
+
+
 const StyledSkillGroup = styled.div`
   width: 47%;
   height: auto;
@@ -32,19 +50,3 @@ const StyledSkillGroup = styled.div`
     }
   }
 `;
-
-const SkillGroup = ({ skill }) => {
-  const { groupName, assets } = skill;
-  return (
-    <StyledSkillGroup>
-      <p className="skill-header">{groupName}</p>
-      <div className="skill-imgs">
-        {assets.map(({name, img, id}) =>
-          <img className="tech-image" key={id} src={img} alt={name} />
-        )}
-      </div>
-    </StyledSkillGroup>
-  )
-}
-
-export default SkillGroup

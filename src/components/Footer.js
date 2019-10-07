@@ -4,6 +4,22 @@ import styled from 'styled-components';
 import ContactForm from './ContactForm';
 import Socials from './Socials';
 
+
+const Footer = () => {
+
+	return (
+		<StyledFooter id="contact">
+			<p>Get in Touch</p>
+			<ContactForm />
+			<Socials />
+		</StyledFooter>
+	);
+};
+
+export default Footer;
+
+
+
 const StyledFooter = styled.div`
 	display:flex;
 	flex-flow: row wrap;
@@ -26,16 +42,3 @@ const StyledFooter = styled.div`
 		margin-bottom: 60px;
 	}
 `;
-
-const Footer = () => {
-
-	return (
-		<StyledFooter id="contact">
-			<p>Get in Touch</p>
-			<ContactForm />
-			<Socials />
-		</StyledFooter>
-	);
-};
-
-export default Footer;

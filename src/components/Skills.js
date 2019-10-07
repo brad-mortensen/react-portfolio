@@ -5,6 +5,20 @@ import SkillGroup from './SkillGroup';
 import { skillData } from './assets/data'
 
 
+const Skills = () => {
+
+  return (
+    <StyledSkills id="skills">
+      <p className="skill-header">Tech I use <span className="brackets">{"{ full list in resume }"}</span></p>
+      {skillData.map(skill =>
+        <SkillGroup skill={skill} key={skill.id} />
+      )}
+    </StyledSkills>
+  )
+}
+
+export default Skills;
+
 
 const StyledSkills = styled.div`
   box-sizing: border-box;
@@ -27,17 +41,3 @@ const StyledSkills = styled.div`
     }
   }
 `;
-
-const Skills = () => {
-
-  return (
-    <StyledSkills id="skills">
-      <p className="skill-header">Tech I use <span className="brackets">{"{ full list in resume }"}</span></p>
-      {skillData.map(skill =>
-        <SkillGroup skill={skill} key={skill.id} />
-      )}
-    </StyledSkills>
-  )
-}
-
-export default Skills;
