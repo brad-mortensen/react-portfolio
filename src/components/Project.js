@@ -108,6 +108,7 @@ const Project = ({ project, isMobile }) => {
           src={img}
           alt={name}
         />
+        {/* Displays information about projects without modal */}
         {isMobile &&
           <div className="project-details">
             <a
@@ -138,6 +139,7 @@ const Project = ({ project, isMobile }) => {
           </a>
         </div>
       </StyledProject>
+      {/* Popup modal to display project info when not on mobile */}
       {viewProject ? <ProjectModal project={project} setViewProject={setViewProject} /> : null}
     </>
   )
