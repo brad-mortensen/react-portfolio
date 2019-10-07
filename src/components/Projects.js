@@ -39,6 +39,7 @@ const Projects = () => {
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
+    // Checks to see if user is on mobile when component mounts and sets isMobile flag appropriately
     if ((typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1)) {
       setIsMobile(true)
     }
