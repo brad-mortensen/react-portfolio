@@ -64,6 +64,7 @@ export const projectData = [
 
 export const skillData = [
   {
+    id: 0,
     groupName: "languages",
     assets: [
       {
@@ -82,9 +83,9 @@ export const skillData = [
         id: 2
       }
     ],
-    id: 0
   },
   {
+    id: 1,
     groupName: "frontend",
     assets: [
       {
@@ -102,10 +103,10 @@ export const skillData = [
         img: angular,
         id: 2
       }
-    ],
-    id: 1
+    ]
   },
   {
+    id: 2,
     groupName: "backend",
     assets: [
       {
@@ -123,10 +124,10 @@ export const skillData = [
         img: django,
         id: 2
       }
-    ],
-    id: 2
+    ]
   },
   {
+    id: 3,
     groupName: "tools",
     assets: [
       {
@@ -144,10 +145,10 @@ export const skillData = [
         img: npm,
         id: 2
       }
-    ],
-    id: 3
+    ]
   },
   {
+    id: 4,
     groupName: "ui/ux",
     assets: [
       {
@@ -165,7 +166,6 @@ export const skillData = [
         img: bootstrap4,
         id: 2
       }
-    ],
-    id: 4
+    ]
   },
 ]
