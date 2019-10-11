@@ -68,19 +68,19 @@ export const skillData = [
     groupName: "languages",
     assets: [
       {
+        id: 0,
         name: 'javascript',
-        img: javascript,
-        id: 0
+        img: javascript
       },
       {
+        id: 1,
         name: 'python',
-        img: python,
-        id: 1
+        img: python
       },
       {
+        id: 2,
         name: 'c',
-        img: c,
-        id: 2
+        img: c
       }
     ],
   },
@@ -89,19 +89,19 @@ export const skillData = [
     groupName: "frontend",
     assets: [
       {
+        id: 0,
         name: 'react',
-        img: react,
-        id: 0
+        img: react
       },
       {
+        id: 1,
         name: 'vue',
-        img: vue,
-        id: 1
+        img: vue
       },
       {
+        id: 2,
         name: 'angular',
-        img: angular,
-        id: 2
+        img: angular
       }
     ]
   },
@@ -110,19 +110,19 @@ export const skillData = [
     groupName: "backend",
     assets: [
       {
+        id: 0,
         name: 'nodejs',
-        img: nodejs,
-        id: 0
+        img: nodejs
       },
       {
+        id: 1,
         name: 'rails',
-        img: rails,
-        id: 1
+        img: rails
       },
       {
+        id: 2,
         name: 'django',
-        img: django,
-        id: 2
+        img: django
       }
     ]
   },
@@ -131,19 +131,19 @@ export const skillData = [
     groupName: "tools",
     assets: [
       {
+        id: 0,
         name: 'git',
-        img: git,
-        id: 0
+        img: git
       },
       {
+        id: 1,
         name: 'vscode',
-        img: vscode,
-        id: 1
+        img: vscode
       },
       {
+        id: 2,
         name: 'npm',
-        img: npm,
-        id: 2
+        img: npm
       }
     ]
   },
@@ -152,20 +152,20 @@ export const skillData = [
     groupName: "ui/ux",
     assets: [
       {
+        id: 0,
         name: 'html5',
-        img: html5,
-        id: 0
+        img: html5
       },
       {
+        id: 1,
         name: 'css3',
-        img: css3,
-        id: 1
+        img: css3
       },
       {
+        id: 2,
         name: 'bootstrap4',
-        img: bootstrap4,
-        id: 2
+        img: bootstrap4
       }
     ]
-  },
+  }
 ]
