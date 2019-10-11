@@ -10,8 +10,8 @@ const Skills = () => {
   return (
     <StyledSkills id="skills">
       <p className="skill-header">Tech I use <span className="brackets">{"{ full list in resume }"}</span></p>
-      {skillData.map(skill =>
-        <SkillGroup skill={skill} key={skill.id} />
+      {skillData.map(({groupName, assets, id}) =>
+        <SkillGroup groupName={groupName} assets={assets} key={id} />
       )}
     </StyledSkills>
   )

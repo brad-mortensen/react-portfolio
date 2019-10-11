@@ -2,8 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 
-const SkillGroup = ({ skill }) => {
-  const { groupName, assets } = skill;
+const SkillGroup = ({ groupName, assets }) => {
   return (
     <StyledSkillGroup>
       <p className="skill-header">{groupName}</p>
