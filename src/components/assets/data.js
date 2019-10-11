@@ -21,36 +21,37 @@ import nightlyfe from './nightlyfe.png';
 
 export const projectData = [
   {
+    id: 0,
     name: "NightLyfe",
     description: "NightLyfe is a Yelp style app built as a group Co-Op project with Weedmaps engineers as stakeholders. The project was to be build in four week by a group of four developers with myself serving as the team lead. It was a great experience to see how real engineering teams work and to receive advice directly from working engineers.",
     img: nightlyfe,
     repo: "https://github.com/Labs-Weedmaps-Team-2",
     stack: "React, Ruby on Rails, PostgreSql",
     website: 'https://night-lyfe.netlify.com/',
-    cleanWebsite: 'night-lyfe.netlify.com',
-    id: 0
+    cleanWebsite: 'night-lyfe.netlify.com'
   },
   {
+    id: 1,
     name: "PairMe",
     description: "PairMe was built during a three day hackathon and is one of my favorite projects I've ever built. I accumulated around 30 hours of work on this project over just the first two days of the hackathon. With the project, we tried to find a way to make it easier for people who wanted to pair program but had trouble finding a partner. ",
     img: pairMe,
     repo: "https://github.com/pairme",
     stack: "React, Express, Node, Socket.IO",
     website: 'https://pair-me.netlify.com/',
-    cleanWebsite: 'pair-me.netlify.com',
-    id: 1
+    cleanWebsite: 'pair-me.netlify.com'
   },
   {
+    id: 2,
     name: "Bonafind",
     description: "Bonafind is a web application that helps you discover restaurants and businesses near you. You could call it a minimum viable Yelp. This project was built over 5 weeks by a team of  four developers. Nearly everything I know about working on a software team, I learned during this project.",
     stack: "React, Express, Node, PostgreSQL",
     img: bonafind,
     repo: "https://github.com/Lambda-School-Labs/labs9-business-reviews",
     website: 'https://bonafind.netlify.com/',
-    cleanWebsite: 'bonafind.biz',
-    id: 2
+    cleanWebsite: 'bonafind.biz'
   },
   {
+    id: 3,
     name: "Bloggo",
     description: "A full-featured Django blog application build from scratch. The app allows users to create a profile with a profile image (Hosted on AWS) and recieve a password reset email if needed. This app was built as a way to refine my Python skills and become more familiar with Django",
     stack: "Django, PostgreSQL",
@@ -58,7 +59,6 @@ export const projectData = [
     repo: "https://github.com/brad-mortensen/django-blog",
     website: 'http://django-bloggo.herokuapp.com/',
     cleanWebsite: 'django-bloggo.herokuapp.com/',
-    id: 3
   },
 ]
 
