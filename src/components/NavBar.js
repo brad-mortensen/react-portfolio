@@ -3,7 +3,9 @@ import styled from 'styled-components';
 
 
 const NavBar = () => {
+
   const name = '{brad mortensen}';
+
   return (
     <StyledNav>
       <div className="nav-links">
