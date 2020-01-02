@@ -22,7 +22,7 @@ export default NavBar
 
 
 const StyledNav = styled.div`
-margin-top: 10px;
+  margin-top: 10px;
   width: 100%;
   height: auto;
   display: flex;
