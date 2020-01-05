@@ -18,9 +18,9 @@ const ContactForm = () => {
 		setButtonText('...sending');
 
 		let data = {
-			name: name,
-			email: email,
-			message: message
+			name,
+			email,
+			message
 		}
 
 		axios.post(apiURL, data)
