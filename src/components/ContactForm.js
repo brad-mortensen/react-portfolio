@@ -29,7 +29,7 @@ const ContactForm = () => {
 				resetForm();
 			})
 			.catch((err) => {
-				console.log(`Message not sent: ${err}`)
+				console.log(`Error Sending Message: ${err}`)
 			})
 	}
 	const resetForm = () => {
