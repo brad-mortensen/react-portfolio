@@ -1,7 +1,6 @@
-import React from 'react';
+import React from "react";
 
-
-const Emoji = { label, symbol } => {
+export default ({ label, symbol }) => {
   return (
     <span
       className="emoji"
@@ -11,6 +10,5 @@ const Emoji = { label, symbol } => {
     >
       {symbol}
     </span>
-  )
+  );
 };
-export default Emoji;
