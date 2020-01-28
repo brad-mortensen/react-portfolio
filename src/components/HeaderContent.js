@@ -1,32 +1,37 @@
-import React from 'react';
-import Slide from 'react-reveal/Slide';
-import styled from 'styled-components';
-import downArrow from './assets/angle-double-down.svg';
-
+import React from "react";
+import Slide from "react-reveal/Slide";
+import styled from "styled-components";
+import downArrow from "./assets/angle-double-down.svg";
 
 const HeaderContent = () => {
   return (
     <>
       <StyledHeaderContent>
-        <Slide left><p className="title">Hi, I'm Brad Mortensen.
-        <br>
-          </br>full-stack web developer.
-        </p>
+        <Slide left>
+          <p className="title">
+            Hi, I'm Brad Mortensen.
+            <br></br>full-stack web developer.
+          </p>
         </Slide>
-        <a href="#about" className="down-arrow"><img className="arrow-img" src={downArrow} alt="down-arrow" /></a>
+        <a href="#about" className="down-arrow">
+          <img className="arrow-img" src={downArrow} alt="down-arrow" />
+        </a>
       </StyledHeaderContent>
       <StyledIntroContainer id="about" className="intro-container">
         <p>About</p>
         <div className="introductions">
           <p className="intro">
-            {"I'm a {currently} Saint Louis based web developer looking for a frontend or fullstack role with a great company. Check out a sample of my projects below and head over to my github for all of my project repos. Feel free to reach out at any of my links or contact me at my email below."}
+            {
+              "I'm a {currently} Saint Louis based web developer looking for a frontend or fullstack role with a great company. Check out a sample of my projects below and head over to my github for all of my project repos. Feel free to reach out at any of my links or contact me at my email below."
+            }
           </p>
           <p>
             {"{ ...or go straight to my "}
             <a
               href="https://resume.creddle.io/resume/395lqm7zlki"
               target="_blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+            >
               resume
             </a>
             {" }"}
@@ -34,11 +39,10 @@ const HeaderContent = () => {
         </div>
       </StyledIntroContainer>
     </>
-  )
-}
+  );
+};
 
-export default HeaderContent
-
+export default HeaderContent;
 
 const StyledHeaderContent = styled.div`
   width: 100%;
@@ -50,18 +54,18 @@ const StyledHeaderContent = styled.div`
   padding: 0 2%;
   padding-top: 100px;
   box-sizing: border-box;
-  @media(max-width: 700px) {
+  @media (max-width: 700px) {
     padding-top: 0;
   }
 
   .title {
     width: 100%;
     height: auto;
-    font-family: 'Carrois Gothic SC', sans-serif;
+    font-family: "Carrois Gothic SC", sans-serif;
     font-size: 4rem;
     text-transform: uppercase;
     line-height: 55px;
-    transition: font-size .25s; 
+    transition: font-size 0.25s;
     @media (max-width: 900px) {
       font-size: 3rem;
     }
@@ -76,7 +80,7 @@ const StyledHeaderContent = styled.div`
     width: 15%;
     height: auto;
     margin: 100px 0 10px 0;
-    
+
     @media (max-width: 900px) {
       width: 25%;
       margin-top: 30px;
@@ -90,12 +94,12 @@ const StyledHeaderContent = styled.div`
       animation: flasher 2s linear infinite;
     }
   }
-  
+
   @keyframes flasher {
     50% {
-    opacity: 0;
+      opacity: 0;
     }
-  }  
+  }
 `;
 
 const StyledIntroContainer = styled.div`
@@ -109,17 +113,16 @@ const StyledIntroContainer = styled.div`
   padding: 0 5%;
   padding-bottom: 50px;
   box-sizing: border-box;
-  @media(max-width:950px){
+  @media (max-width: 950px) {
     height: 430px;
   }
-  @media(max-width:810px){
+  @media (max-width: 810px) {
     height: auto;
   }
-  p{
+  p {
     width: 100%;
     font-size: 2rem;
-    font-family: 'Carrois Gothic SC', sans-serif;
-    
+    font-family: "Carrois Gothic SC", sans-serif;
   }
   .introductions {
     width: 100%;
@@ -128,8 +131,8 @@ const StyledIntroContainer = styled.div`
     flex-flow: column;
     align-items: center;
     justify-content: space-around;
-    font-family: 'Carrois Gothic SC', sans-serif;
-    @media(max-width:810px){
+    font-family: "Carrois Gothic SC", sans-serif;
+    @media (max-width: 810px) {
       margin-top: 0;
       flex-flow: row wrap;
       justify-content: center;
@@ -151,5 +154,5 @@ const StyledIntroContainer = styled.div`
         text-decoration: underline;
       }
     }
-  }  
+  }
 `;
